@@ -1,0 +1,44 @@
+---
+import Button from '@components/ui/Button.astro';
+import { useTranslations } from '@i18n/ui';
+import type { Lang } from '@i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const homeHref = lang === 'en' ? '/' : `/${lang}/`;
+---
+
+<section
+  data-testid="hero"
+  class="flex h-screen flex-col items-center justify-center text-center px-4"
+>
+  <!-- Animation centered -->
+  <div class="mb-8">
+    <img
+      src="/animation.gif"
+      alt="Kukai Solutions"
+      class="mx-auto h-40 w-auto md:h-56"
+      loading="eager"
+    />
+  </div>
+
+  <!-- Tagline -->
+  <h1 class="mb-4 font-monospace text-3xl text-black dark:text-white lg:text-5xl max-w-2xl">
+    <span class="text-orange">{t('hero.tagline')}</span>
+  </h1>
+
+  <!-- Subtitle -->
+  <p class="mb-10 text-base text-black dark:text-white lg:text-lg max-w-xl opacity-80">
+    {t('hero.subtitle')}
+  </p>
+
+  <!-- CTA -->
+  <a href={`${homeHref}#services`}>
+    <Button style="primary" size="lg">{t('hero.cta')}</Button>
+  </a>
+</section>

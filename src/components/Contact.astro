@@ -1,0 +1,58 @@
+---
+import Button from '@components/ui/Button.astro';
+import { Icon } from 'astro-icon/components';
+import { useTranslations } from '@i18n/ui';
+import type { Lang } from '@i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<section
+  id="contact"
+  class="flex flex-col flex-wrap items-center justify-center gap-8 py-20 text-black dark:text-white lg:min-h-screen"
+>
+  <div class="text-center">
+    <h2 class="font-monospace text-2xl text-orange lg:text-4xl mb-2">{t('contact.title')}</h2>
+    <span class="block mx-auto mb-6 h-1 w-10 bg-orange"></span>
+    <p class="opacity-70 mb-8">{t('contact.subtitle')}</p>
+  </div>
+
+  <a href="mailto:contact@kukaisolutions.com">
+    <Button size="lg" style="primary">{t('contact.button')}</Button>
+  </a>
+
+  <hr class="w-1/2 border-gray-300 dark:border-gray-700" />
+
+  <!-- Social links -->
+  <div class="flex gap-8">
+    <a
+      href="https://github.com/kukaisolutions"
+      target="_blank"
+      rel="noopener"
+      aria-label="GitHub"
+    >
+      <Icon
+        name="mdi:github"
+        class="h-10 w-10 hover:text-orange transition-colors"
+        size={40}
+      />
+    </a>
+    <a
+      href="https://www.linkedin.com/company/kukaisolutions"
+      target="_blank"
+      rel="noopener"
+      aria-label="LinkedIn"
+    >
+      <Icon
+        name="mdi:linkedin"
+        class="h-10 w-10 hover:text-orange transition-colors"
+        size={40}
+      />
+    </a>
+  </div>
+</section>

@@ -1,0 +1,47 @@
+---
+import { useTranslations } from '@i18n/ui';
+import type { Lang } from '@i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const bullets = [
+  t('about.bullet1'),
+  t('about.bullet2'),
+  t('about.bullet3'),
+  t('about.bullet4'),
+] as const;
+---
+
+<section
+  id="about"
+  class="flex flex-col items-center justify-center py-20 lg:min-h-screen lg:flex-row lg:gap-12"
+>
+  <!-- Heading column -->
+  <div class="mb-8 flex flex-col items-center lg:mb-0 lg:w-1/4 lg:items-start">
+    <h2 class="font-monospace text-2xl text-orange lg:text-4xl">{t('about.title')}</h2>
+    <span class="mb-6 mt-2 h-1 w-10 bg-orange"></span>
+  </div>
+
+  <!-- Body column -->
+  <div class="w-full max-w-4xl text-justify text-black dark:text-white lg:w-3/4">
+    <p class="mb-4">{t('about.p1')}</p>
+    <p class="mb-4">{t('about.p2')}</p>
+    <p class="mb-6">{t('about.p3')}</p>
+
+    <ul style="list-style: none; padding-left: 1.5rem;">
+      {
+        bullets.map((bullet) => (
+          <li style="position: relative; margin-bottom: 0.6em;">
+            <span style="position: absolute; left: -1.5em; top: 0; color: #E06330;">∞</span>
+            <span class="text-orange">{bullet}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

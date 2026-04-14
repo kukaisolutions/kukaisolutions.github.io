@@ -1,0 +1,39 @@
+---
+import type { Lang } from '@i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const links = [
+  { code: 'en' as Lang, label: 'EN', href: '/' },
+  { code: 'pt' as Lang, label: 'PT', href: '/pt/' },
+  { code: 'es' as Lang, label: 'ES', href: '/es/' },
+];
+---
+
+<div class="flex items-center gap-1 text-sm font-semibold">
+  {
+    links.map((link, i) => (
+      <>
+        {i > 0 && (
+          <span class="text-gray-400 select-none">|</span>
+        )}
+        <a
+          href={link.href}
+          class:list={[
+            'transition-colors px-1',
+            lang === link.code
+              ? 'text-orange'
+              : 'text-black dark:text-white hover:text-orange dark:hover:text-orange',
+          ]}
+          aria-current={lang === link.code ? 'true' : undefined}
+        >
+          {link.label}
+        </a>
+      </>
+    ))
+  }
+</div>

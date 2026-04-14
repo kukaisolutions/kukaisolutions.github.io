@@ -1,0 +1,79 @@
+---
+import LanguageSelector from '@components/ui/LanguageSelector.astro';
+import ToggleTheme from '@components/ui/ToggleTheme.astro';
+import { Astronav, MenuIcon, MenuItems } from 'astro-navbar';
+import { useTranslations } from '@i18n/ui';
+import type { Lang } from '@i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const homeHref = lang === 'en' ? '/' : `/${lang}/`;
+
+const menuitems = [
+  { title: t('nav.services'), path: `${homeHref}#services` },
+  { title: t('nav.about'), path: `${homeHref}#about` },
+  { title: t('nav.contact'), path: `${homeHref}#contact` },
+];
+---
+
+<header class="relative my-5">
+  <Astronav>
+    <!-- Main row: nav links (desktop left) | controls (desktop right) + hamburger (mobile) -->
+    <div class="flex w-full items-center justify-between">
+
+      <!-- Desktop nav links -->
+      <nav class="hidden lg:flex lg:gap-6">
+        {
+          menuitems.map((item) => (
+            <a
+              href={item.path}
+              class="py-2 text-black hover:text-orange dark:text-white dark:hover:text-orange transition-colors"
+            >
+              {item.title}
+            </a>
+          ))
+        }
+      </nav>
+
+      <!-- Desktop controls + mobile hamburger -->
+      <div class="flex items-center justify-end gap-4">
+        <!-- Desktop: language selector + theme toggle -->
+        <div class="hidden lg:flex items-center gap-4">
+          <LanguageSelector lang={lang} />
+          <ToggleTheme />
+        </div>
+        <!-- Mobile: hamburger -->
+        <div class="block lg:hidden">
+          <MenuIcon class="h-6 w-6 text-black dark:text-white" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile dropdown (hidden by default, shown by MenuIcon) -->
+    <MenuItems class="mt-3 hidden w-full border-t border-gray-200 dark:border-gray-700 lg:hidden">
+      <ul class="flex flex-col gap-4 py-4">
+        {
+          menuitems.map((item) => (
+            <li>
+              <a
+                href={item.path}
+                class="block py-1 text-black hover:text-orange dark:text-white dark:hover:text-orange transition-colors"
+              >
+                {item.title}
+              </a>
+            </li>
+          ))
+        }
+        <li class="flex items-center gap-4 pt-2">
+          <LanguageSelector lang={lang} />
+          <ToggleTheme />
+        </li>
+      </ul>
+    </MenuItems>
+  </Astronav>
+</header>

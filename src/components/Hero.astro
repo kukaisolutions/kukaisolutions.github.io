@@ -20,9 +20,15 @@ const homeHref = lang === 'en' ? '/' : `/${lang}/`;
   <!-- Animation centered -->
   <div class="mb-8">
     <img
-      src="/kukaisolutions_website_2.gif"
+      src="/kukaisolutions_website_black.gif"
       alt="Kukai Solutions"
-      class="mx-auto h-40 w-auto md:h-56"
+      class="mx-auto h-40 w-auto md:h-56 block dark:hidden"
+      loading="eager"
+    />
+    <img
+      src="/kukaisolutions_website_white.gif"
+      alt="Kukai Solutions"
+      class="mx-auto h-40 w-auto md:h-56 hidden dark:block"
       loading="eager"
     />
   </div>

@@ -16,7 +16,7 @@ export const ui = {
     'nav.techniques': 'Our Techniques',
 
     // Hero
-    'hero.tagline': 'Software solutions for small businesses and their unique complexities.',
+    'hero.tagline': 'Software solutions for small businesses and their unique complexities',
     'hero.subtitle':
       'We immerse ourselves in your company\'s problems to find the simplest, most effective solution.',
     'hero.cta': 'Learn more',
@@ -73,7 +73,7 @@ export const ui = {
     'nav.techniques': 'Nossas Técnicas',
 
     // Hero
-    'hero.tagline': 'Soluções de software para pequenas empresas e suas complexidades únicas.',
+    'hero.tagline': 'Soluções de software para pequenas empresas e suas complexidades únicas',
     'hero.subtitle':
       'Mergulhamos nos problemas da sua empresa para encontrar a solução mais simples e eficaz.',
     'hero.cta': 'Saiba mais',
@@ -130,7 +130,7 @@ export const ui = {
     'nav.techniques': 'Nuestras Técnicas',
 
     // Hero
-    'hero.tagline': 'Soluciones de software para pequeñas empresas y sus complejidades únicas.',
+    'hero.tagline': 'Soluciones de software para pequeñas empresas y sus complejidades únicas',
     'hero.subtitle':
       'Nos sumergimos en los problemas de su empresa para encontrar la solución más simple y efectiva.',
     'hero.cta': 'Saber más',

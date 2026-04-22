@@ -15,9 +15,11 @@ const t = useTranslations(lang);
 const homeHref = lang === 'en' ? '/' : `/${lang}/`;
 
 const menuitems = [
-  { title: t('nav.services'), path: `${homeHref}#services` },
-  { title: t('nav.about'), path: `${homeHref}#about` },
-  { title: t('nav.contact'), path: `${homeHref}#contact` },
+  { title: t('nav.about'),      path: `${homeHref}#about` },
+  { title: t('nav.manifesto'),  path: `${homeHref}#manifesto` },
+  { title: t('nav.plans'),      path: `${homeHref}#plans` },
+  { title: t('nav.contact'),    path: `${homeHref}#contact` },
+  { title: t('nav.techniques'), path: `/techniques/` },
 ];
 ---
 

@@ -1,0 +1,26 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Techniques from '@components/Techniques.astro';
+import BackToTop from '@components/ui/BackToTop.astro';
+
+const lang = 'en' as const;
+---
+
+<Layout
+  lang={lang}
+  title="Our Techniques | Kukai Solutions"
+  description="The data science and engineering methods we use: Machine Learning, NLP, Process Optimization, and Data Analytics."
+>
+  <main class="px-4">
+    <div class="mb-4">
+      <a
+        href="/"
+        class="text-sm text-black dark:text-white opacity-50 hover:opacity-100 hover:text-orange transition-colors"
+      >
+        ← Back to home
+      </a>
+    </div>
+    <Techniques lang={lang} />
+  </main>
+  <BackToTop />
+</Layout>

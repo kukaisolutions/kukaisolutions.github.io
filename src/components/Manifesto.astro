@@ -1,0 +1,69 @@
+---
+const values = [
+  {
+    label: 'Partnership',
+    body: "We are technical, but most of the time we are not specialists in your field. You know where the value is; we know how to improve process throughput, increase reliability, and make your company more robust and efficient. It's joint work — we complement each other.",
+  },
+  {
+    label: 'Non-triviality',
+    body: 'What you do is non-trivial — otherwise you would have already found software that does it.',
+  },
+  {
+    label: 'Growth',
+    body: 'We grow together.',
+  },
+  {
+    label: 'Learning',
+    body: 'We learn together.',
+  },
+  {
+    label: 'Fairness & Commitment',
+    body: "You are a small business, and so are we. There's nothing wrong with being small, but you have to have clarity of your goals and priorities. A software project is a commitment from both sides. As Dylan says: “we’ll let you be in our dreams if we can be in yours.” We shall not refrain from pulling out of wavering partnerships.",
+  },
+  {
+    label: 'Respect',
+    body: 'We work with you, not for you.',
+    bold: ['with', 'for'],
+  },
+  {
+    label: 'Honesty',
+    body: 'We reserve our right to tell you when we think you are wrong. We expect the same from you. Honest conversations are how we find the path that brings value to your company — and, as a byproduct, to Kukai as well.',
+  },
+];
+---
+
+<section
+  id="manifesto"
+  class="flex flex-col items-center py-20 lg:flex-row lg:gap-12"
+>
+  <div class="mb-8 flex flex-col items-center lg:mb-0 lg:w-1/4 lg:items-start">
+    <h2 class="font-monospace text-2xl text-orange lg:text-4xl">Our Manifesto</h2>
+    <span class="mb-6 mt-2 h-1 w-10 bg-orange"></span>
+  </div>
+
+  <div class="w-full max-w-2xl text-black dark:text-white lg:w-3/5">
+    <p class="mb-6 text-justify opacity-80">
+      We dig deep. We immerse ourselves in your company's problems with the goal of finding the
+      simplest, most effective solution.
+    </p>
+    <ul class="space-y-5">
+      {
+        values.map((v) => (
+          <li class="flex gap-4">
+            <span class="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange" />
+            <p class="text-sm leading-relaxed opacity-80">
+              <span class="font-semibold text-orange opacity-100">{v.label}:</span>{' '}
+              {v.label === 'Respect'
+                ? (
+                  <>
+                    We work <strong>with</strong> you, not <strong>for</strong> you.
+                  </>
+                )
+                : v.body}
+            </p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

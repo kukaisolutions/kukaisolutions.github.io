@@ -1,8 +1,10 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import Hero from '@components/Hero.astro';
-import Services from '@components/Services.astro';
 import About from '@components/About.astro';
+import Complexities from '@components/Complexities.astro';
+import Manifesto from '@components/Manifesto.astro';
+import Plans from '@components/Plans.astro';
 import Contact from '@components/Contact.astro';
 import BackToTop from '@components/ui/BackToTop.astro';
 
@@ -11,13 +13,15 @@ const lang = 'pt' as const;
 
 <Layout
   lang={lang}
-  title="Kukai Solutions | Consultoria Orientada por Dados"
-  description="Soluções orientadas por dados que convertem seus desafios mais complexos em resultados mensuráveis."
+  title="Kukai Solutions | Software para Pequenas Empresas"
+  description="Soluções de software para pequenas empresas e suas complexidades únicas."
 >
   <main>
     <Hero lang={lang} />
-    <Services lang={lang} />
     <About lang={lang} />
+    <Complexities />
+    <Manifesto />
+    <Plans />
     <Contact lang={lang} />
   </main>
   <BackToTop />

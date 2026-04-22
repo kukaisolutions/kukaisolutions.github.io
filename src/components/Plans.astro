@@ -1,0 +1,136 @@
+---
+const steps = [
+  {
+    title: 'Prospecting',
+    body: 'Developers and business stakeholders meet to understand the problem and define the main goals.',
+  },
+  {
+    title: 'Modeling',
+    body: 'Together, we map the problem and the flow of business value.',
+  },
+  {
+    title: 'Development',
+    body: 'Through iterative cycles, stakeholders and developers build and test the product, reaching a usable result by incremental steps.',
+  },
+];
+
+const tableRows = [
+  ['Maintenance',       "Kukai's responsibility",    "Your company's responsibility"],
+  ['Infrastructure',    "Kukai's responsibility",    "Your company's responsibility"],
+  ['Technology',        'Owned by Kukai Solutions',  'Owned by your company'],
+  ['Project duration',  '1–3 months',                'Varies by complexity'],
+  ['Software ownership','Kukai owns it',             'Your company owns it'],
+  ['Price',             'Low – Medium',              'Medium – High'],
+  ['Payment',           'Development fee + monthly subscription', 'Development fee + final delivery fee'],
+];
+
+const pricing = [
+  { label: 'Plan A – Development', price: '$100 – $1,000', unit: 'per development month' },
+  { label: 'Plan B – Development', price: '$1K – $10K',    unit: 'per development month' },
+  { label: 'Plan A – Subscription', price: '$50 – $200', unit: 'per month' },
+];
+---
+
+<section
+  id="plans"
+  class="flex flex-col items-center py-20"
+>
+
+  <!-- How We Work -->
+  <div class="mb-20 w-full max-w-2xl">
+    <div class="mb-10 flex flex-col items-center text-center">
+      <h2 class="font-monospace text-2xl text-orange lg:text-4xl">How We Work</h2>
+      <span class="mb-4 mt-2 h-1 w-10 bg-orange"></span>
+      <p class="text-black dark:text-white opacity-70 max-w-lg">
+        Small, focused software solutions — ready for testing within 1–3 months from conception.
+      </p>
+    </div>
+
+    <ol class="space-y-6 text-black dark:text-white">
+      {
+        steps.map((step, i) => (
+          <li class="flex gap-5">
+            <span class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-orange text-sm font-bold text-white">
+              {i + 1}
+            </span>
+            <div>
+              <p class="font-semibold">{step.title}</p>
+              <p class="mt-1 text-sm opacity-70 leading-relaxed">{step.body}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+
+  <!-- Collaboration models -->
+  <div class="mb-20 w-full max-w-2xl">
+    <div class="mb-8 flex flex-col items-center text-center">
+      <h3 class="font-monospace text-xl text-orange lg:text-3xl">Collaboration Models</h3>
+      <span class="mb-4 mt-2 h-1 w-10 bg-orange"></span>
+    </div>
+
+    <div class="mb-8 space-y-4 text-black dark:text-white text-sm leading-relaxed">
+      <p>
+        <span class="font-semibold text-orange">Plan A — Partnership:</span> We develop software
+        with broader applicability. You pay a development fee and a monthly subscription. The
+        software is not exclusively yours and may be offered to other companies, including
+        competitors. This is the most cost-effective option.
+      </p>
+      <p>
+        <span class="font-semibold text-orange">Plan B — Consulting:</span> We build a custom
+        solution tailored to your company. The code and intellectual property are yours, delivered
+        at the end of the project. You are responsible for maintenance, deployment, and
+        infrastructure. This option is more expensive.
+      </p>
+    </div>
+
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm text-black dark:text-white border-collapse">
+        <thead>
+          <tr class="border-b border-gray-300 dark:border-gray-700">
+            <th class="py-3 pr-4 text-left font-medium opacity-50 w-1/4"></th>
+            <th class="py-3 px-4 text-left font-semibold text-orange">Plan A (Partnership)</th>
+            <th class="py-3 px-4 text-left font-semibold text-orange">Plan B (Consulting)</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
+          {
+            tableRows.map(([label, a, b]) => (
+              <tr>
+                <td class="py-3 pr-4 font-medium opacity-60">{label}</td>
+                <td class="py-3 px-4 opacity-80">{a}</td>
+                <td class="py-3 px-4 opacity-80">{b}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <div class="w-full max-w-2xl">
+    <div class="mb-8 flex flex-col items-center text-center">
+      <h3 class="font-monospace text-xl text-orange lg:text-3xl">Pricing</h3>
+      <span class="mb-4 mt-2 h-1 w-10 bg-orange"></span>
+    </div>
+
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+      {
+        pricing.map((p) => (
+          <div class="rounded-2xl border border-gray-200 dark:border-gray-700 p-6 text-black dark:text-white">
+            <p class="mb-2 text-sm font-semibold text-orange">{p.label}</p>
+            <p class="text-2xl font-bold">{p.price}</p>
+            <p class="mt-1 text-xs opacity-50">{p.unit}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <p class="mt-6 text-center text-xs text-black dark:text-white opacity-40">
+      Prices may vary depending on software complexity and the number of developers involved.
+    </p>
+  </div>
+
+</section>

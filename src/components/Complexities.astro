@@ -1,0 +1,63 @@
+---
+const items = [
+  {
+    label: 'Lack of uniformity',
+    body: 'Different employees handle the same processes differently, producing inconsistent outcomes, costs, and profit margins.',
+  },
+  {
+    label: 'Lack of transparency',
+    body: 'Processes are well established, but there is no governance, which prevents timely decisions from being made.',
+  },
+  {
+    label: 'Lack of metrics',
+    body: "The team can tell good outcomes from bad, but there's no clear way to measure them.",
+  },
+  {
+    label: 'Lack of structure',
+    body: 'Outcomes are clear, but the processes to reach them vary or are not well defined.',
+  },
+  {
+    label: 'Repetitive or time-consuming tasks',
+    body: "Teams' efforts are wasted on tasks that are necessary but add no value to the final product.",
+  },
+  {
+    label: 'Lack of governance',
+    body: "Where's that file? Why are there two copies of this spreadsheet? Which version is the most recent?",
+  },
+  {
+    label: 'Noise in decision-making',
+    body: 'Decisions based on the same facts should be consistent, regardless of who made them or when.',
+  },
+];
+---
+
+<section
+  id="complexities"
+  class="flex flex-col items-center py-20 lg:flex-row lg:gap-12"
+>
+  <div class="mb-8 flex flex-col items-center lg:mb-0 lg:w-1/4 lg:items-start">
+    <h2 class="font-monospace text-2xl text-orange lg:text-4xl">Small Business<br />Complexities</h2>
+    <span class="mb-6 mt-2 h-1 w-10 bg-orange"></span>
+  </div>
+
+  <div class="w-full max-w-2xl text-black dark:text-white lg:w-3/5">
+    <p class="mb-6 text-justify opacity-80">
+      Specialists often overlook the nontrivial steps in their own workflows. Our goal is to uncover
+      and address these hidden complexities through software.
+    </p>
+    <ol class="space-y-4">
+      {
+        items.map((item, i) => (
+          <li class="flex gap-4">
+            <span class="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-orange text-xs font-bold text-white">
+              {i + 1}
+            </span>
+            <p class="text-sm leading-relaxed opacity-80">
+              <span class="font-semibold opacity-100">{item.label}:</span> {item.body}
+            </p>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>

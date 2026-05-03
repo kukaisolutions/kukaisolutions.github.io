@@ -29,7 +29,7 @@ const {
     <title>{title}</title>
   </head>
   <body
-    class="mx-auto max-w-screen-xl bg-white text-black dark:bg-black dark:text-white px-5 font-sans xs:text-[16px] md:text-[18px] flex flex-col min-h-screen"
+    class="mx-auto max-w-screen-xl text-black dark:text-white px-5 font-sans xs:text-[16px] md:text-[18px] flex flex-col min-h-screen"
   >
     <Navbar lang={lang} />
     <slot />
@@ -39,9 +39,36 @@ const {
       img {
         content-visibility: auto;
       }
+
+      :root {
+        --penrose-light-overlay: 0.78; /* 0 = full pattern, 1 = pure white */
+        --penrose-dark-overlay: 0.78;  /* 0 = full pattern, 1 = pure black */
+      }
+
+      html {
+        background-image:
+          linear-gradient(
+            rgba(255, 255, 255, var(--penrose-light-overlay)),
+            rgba(255, 255, 255, var(--penrose-light-overlay))
+          ),
+          url('/images/penrose_tiling.jpg');
+        background-repeat: repeat;
+        background-attachment: fixed;
+      }
+
+      html.dark {
+        background-image:
+          linear-gradient(
+            rgba(0, 0, 0, var(--penrose-dark-overlay)),
+            rgba(0, 0, 0, var(--penrose-dark-overlay))
+          ),
+          url('/images/penrose_tiling.jpg');
+      }
     </style>
 
     <script>
+      declare global { interface Window { toggleTheme: () => void; } }
+
       const html = document.documentElement;
       html.classList.remove('dark');
 

@@ -1,33 +1,22 @@
 ---
+import { useTranslations } from '@i18n/ui';
+import type { Lang } from '@i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
 const items = [
-  {
-    label: 'Lack of uniformity',
-    body: 'Different employees handle the same processes differently, producing inconsistent outcomes, costs, and profit margins.',
-  },
-  {
-    label: 'Lack of transparency',
-    body: 'Processes are well established, but there is no governance, which prevents timely decisions from being made.',
-  },
-  {
-    label: 'Lack of metrics',
-    body: "The team can tell good outcomes from bad, but there's no clear way to measure them.",
-  },
-  {
-    label: 'Lack of structure',
-    body: 'Outcomes are clear, but the processes to reach them vary or are not well defined.',
-  },
-  {
-    label: 'Repetitive or time-consuming tasks',
-    body: "Teams' efforts are wasted on tasks that are necessary but add no value to the final product.",
-  },
-  {
-    label: 'Lack of governance',
-    body: "Where's that file? Why are there two copies of this spreadsheet? Which version is the most recent?",
-  },
-  {
-    label: 'Noise in decision-making',
-    body: 'Decisions based on the same facts should be consistent, regardless of who made them or when.',
-  },
+  { label: t('complexities.item1.label'), body: t('complexities.item1.body') },
+  { label: t('complexities.item2.label'), body: t('complexities.item2.body') },
+  { label: t('complexities.item3.label'), body: t('complexities.item3.body') },
+  { label: t('complexities.item4.label'), body: t('complexities.item4.body') },
+  { label: t('complexities.item5.label'), body: t('complexities.item5.body') },
+  { label: t('complexities.item6.label'), body: t('complexities.item6.body') },
+  { label: t('complexities.item7.label'), body: t('complexities.item7.body') },
 ];
 ---
 
@@ -36,14 +25,13 @@ const items = [
   class="flex flex-col items-center py-20 lg:flex-row lg:gap-12"
 >
   <div class="mb-8 flex flex-col items-center lg:mb-0 lg:w-1/4 lg:items-start">
-    <h2 class="font-monospace text-2xl text-orange lg:text-4xl">Small Business<br />Complexities</h2>
+    <h2 class="font-monospace text-2xl text-orange lg:text-4xl">{t('complexities.title')}</h2>
     <span class="mb-6 mt-2 h-1 w-10 bg-orange"></span>
   </div>
 
   <div class="w-full max-w-2xl text-black dark:text-white lg:w-3/5">
     <p class="mb-6 text-justify opacity-80">
-      Specialists often overlook the nontrivial steps in their own workflows. Our goal is to uncover
-      and address these hidden complexities through software.
+      {t('complexities.intro')}
     </p>
     <ol class="space-y-4">
       {

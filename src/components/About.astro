@@ -29,21 +29,11 @@ const bullets = [
 
   <!-- Body column -->
   <div class="w-full max-w-2xl text-justify text-black dark:text-white lg:w-3/5">
-    <p class="mb-4">
-      What defines a small business? A $50M company may seem large, but it might not be big enough to develop its own tailored software. Sometimes, even sizable companies rely on spreadsheets managed on personal laptops. Medical clinics, for example, often struggle with appointment management and are forced to choose between expensive, overly complex, or inefficient off-the-shelf solutions.
-    </p>
-    <p class="mb-4">
-      Every company—large or small—faces inefficiencies, often at a systemic level:
-    </p>
+    <p class="mb-4">{t('about.p1')}</p>
+    <p class="mb-4">{t('about.p2')}</p>
+    <p class="mb-4">{t('about.p3')}</p>
     <ul class="mb-4 list-disc pl-6 text-orange">
-      <li>Difficulty managing schedules, risking missed appointments and commitments.</li>
-      <li>Documents and spreadsheets vary between employees, leading to confusion over the latest version.</li>
-      <li>Databases with conflicting or inconsistent data.</li>
-      <li>Information lost on personal computers, making it hard to find or audit.</li>
-      <li>Decentralized or inaccessible data, prone to loss or tampering.</li>
+      {bullets.map((b) => <li>{b}</li>)}
     </ul>
-    <p class="mb-6">
-      Kukai Solutions was founded to deliver quality software that addresses the unique challenges of small businesses. We recognize that small businesses are complex, and managing them is challenging. Our software is designed to simplify management, provide transparency, and free up your time for strategic planning.
-    </p>
   </div>
 </section>

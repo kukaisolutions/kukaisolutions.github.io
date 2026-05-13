@@ -19,19 +19,60 @@ const homeHref = lang === 'en' ? '/' : `/${lang}/`;
 >
   <!-- Animation centered -->
   <div class="mb-8">
+    <!-- Odd-day logos (default / no-JS fallback) -->
     <img
+      id="logo-odd-light"
       src="/kukaisolutions_website_black.gif"
       alt="Kukai Solutions"
       class="mx-auto h-40 w-auto md:h-56 block dark:hidden"
       loading="eager"
     />
     <img
+      id="logo-odd-dark"
       src="/kukaisolutions_website_white.gif"
       alt="Kukai Solutions"
       class="mx-auto h-40 w-auto md:h-56 hidden dark:block"
       loading="eager"
     />
+    <!-- Even-day logos (shown by script on even calendar days) -->
+    <img
+      id="logo-even-light"
+      src="/animation_black_pacman_black.gif"
+      alt="Kukai Solutions"
+      class="mx-auto h-40 w-auto md:h-56 hidden"
+      loading="eager"
+    />
+    <img
+      id="logo-even-dark"
+      src="/animation_black_pacman_white.gif"
+      alt="Kukai Solutions"
+      class="mx-auto h-40 w-auto md:h-56 hidden"
+      loading="eager"
+    />
   </div>
+
+  <script>
+    (function () {
+      const isEvenDay = new Date().getDate() % 2 === 0;
+      if (!isEvenDay) return;
+
+      const oddLight  = document.getElementById('logo-odd-light')  as HTMLElement | null;
+      const oddDark   = document.getElementById('logo-odd-dark')   as HTMLElement | null;
+      const evenLight = document.getElementById('logo-even-light') as HTMLElement | null;
+      const evenDark  = document.getElementById('logo-even-dark')  as HTMLElement | null;
+
+      function apply() {
+        const dark = document.documentElement.classList.contains('dark');
+        if (oddLight)  oddLight.style.display  = 'none';
+        if (oddDark)   oddDark.style.display   = 'none';
+        if (evenLight) evenLight.style.display = dark ? 'none' : 'block';
+        if (evenDark)  evenDark.style.display  = dark ? 'block' : 'none';
+      }
+
+      apply();
+      new MutationObserver(apply).observe(document.documentElement, { attributeFilter: ['class'] });
+    })();
+  </script>
 
   <!-- Tagline -->
   <h1 class="mb-4 font-monospace text-3xl text-black dark:text-white lg:text-5xl max-w-2xl">

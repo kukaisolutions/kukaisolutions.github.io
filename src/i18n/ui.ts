@@ -44,7 +44,7 @@ export const ui = {
     // About
     'about.title': 'About us',
     'about.p1':
-      'Kukaisolutions is a specialized consulting firm that combines deep mathematical and computational expertise with practical industry experience.',
+      'Kukai Solutions is a specialized consulting firm that combines deep mathematical and computational expertise with practical industry experience.',
     'about.p2':
       'We work at the intersection of data science, machine learning, and business strategy—helping organizations uncover hidden inefficiencies and transform them into measurable, data-informed outcomes.',
     'about.p3':
@@ -183,7 +183,7 @@ export const ui = {
     // About
     'about.title': 'Sobre nós',
     'about.p1':
-      'A Kukaisolutions é uma consultoria especializada que combina profunda expertise matemática e computacional com experiência prática na indústria.',
+      'A Kukai Solutions é uma consultoria especializada que combina profunda expertise matemática e computacional com experiência prática na indústria.',
     'about.p2':
       'Atuamos na interseção entre ciência de dados, machine learning e estratégia de negócios—ajudando organizações a descobrir ineficiências ocultas e transformá-las em resultados mensuráveis.',
     'about.p3':
@@ -322,7 +322,7 @@ export const ui = {
     // About
     'about.title': 'Sobre nosotros',
     'about.p1':
-      'Kukaisolutions es una consultora especializada que combina profunda experiencia matemática y computacional con experiencia práctica en la industria.',
+      'Kukai Solutions es una consultora especializada que combina profunda experiencia matemática y computacional con experiencia práctica en la industria.',
     'about.p2':
       'Trabajamos en la intersección de la ciencia de datos, el machine learning y la estrategia empresarial—ayudando a las organizaciones a descubrir ineficiencias ocultas y transformarlas en resultados medibles.',
     'about.p3':

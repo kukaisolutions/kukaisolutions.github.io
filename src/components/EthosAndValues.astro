@@ -10,28 +10,28 @@ const { lang } = Astro.props;
 const t = useTranslations(lang);
 
 const values = [
-  { label: t('manifesto.value1.label'), body: t('manifesto.value1.body') },
-  { label: t('manifesto.value2.label'), body: t('manifesto.value2.body') },
-  { label: t('manifesto.value3.label'), body: t('manifesto.value3.body') },
-  { label: t('manifesto.value4.label'), body: t('manifesto.value4.body') },
-  { label: t('manifesto.value5.label'), body: t('manifesto.value5.body') },
-  { label: t('manifesto.value6.label'), body: t('manifesto.value6.body') },
-  { label: t('manifesto.value7.label'), body: t('manifesto.value7.body') },
+  { label: t('ethos.value1.label'), body: t('ethos.value1.body') },
+  { label: t('ethos.value2.label'), body: t('ethos.value2.body') },
+  { label: t('ethos.value3.label'), body: t('ethos.value3.body') },
+  { label: t('ethos.value4.label'), body: t('ethos.value4.body') },
+  { label: t('ethos.value5.label'), body: t('ethos.value5.body') },
+  { label: t('ethos.value6.label'), body: t('ethos.value6.body') },
+  { label: t('ethos.value7.label'), body: t('ethos.value7.body') },
 ];
 ---
 
 <section
-  id="manifesto"
+  id="ethos-and-values"
   class="flex flex-col items-center py-20 lg:flex-row lg:gap-12"
 >
   <div class="mb-8 flex flex-col items-center lg:mb-0 lg:w-1/4 lg:items-start">
-    <h2 class="font-monospace text-2xl text-orange lg:text-4xl">{t('manifesto.title')}</h2>
+    <h2 class="font-monospace text-2xl text-orange lg:text-4xl">{t('ethos.title')}</h2>
     <span class="mb-6 mt-2 h-1 w-10 bg-orange"></span>
   </div>
 
   <div class="w-full max-w-2xl text-black dark:text-white lg:w-3/5">
     <p class="mb-6 text-justify opacity-80">
-      {t('manifesto.intro')}
+      {t('ethos.intro')}
     </p>
     <ul class="space-y-5">
       {

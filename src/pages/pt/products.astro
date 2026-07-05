@@ -1,0 +1,26 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Products from '@components/Products.astro';
+import BackToTop from '@components/ui/BackToTop.astro';
+
+const lang = 'pt' as const;
+---
+
+<Layout
+  lang={lang}
+  title="Nossos Produtos | Kukai Solutions"
+  description="Produtos da Kukai Solutions."
+>
+  <main class="px-4">
+    <div class="mb-4">
+      <a
+        href="/pt/"
+        class="text-sm text-black dark:text-white opacity-50 hover:opacity-100 hover:text-orange transition-colors"
+      >
+        ← Voltar para o início
+      </a>
+    </div>
+    <Products lang={lang} />
+  </main>
+  <BackToTop />
+</Layout>

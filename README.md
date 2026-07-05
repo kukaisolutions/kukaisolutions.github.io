@@ -84,3 +84,19 @@ pnpm deploy
 ```
 
 Builds the site and publishes `dist/` to GitHub Pages via `gh-pages`.
+
+___
+
+# Other ways to build and preview it locally
+
+## Build
+
+```bash
+pnpm run build
+```
+
+## Preview
+
+```bash
+npm run preview
+```

@@ -1,0 +1,208 @@
+---
+import { useTranslations } from '@i18n/ui';
+import type { Lang } from '@i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+
+const beiweFeatures = [
+  { emoji: '📅', label: t('products.beiwe.feature1.label'), body: t('products.beiwe.feature1.body') },
+  { emoji: '💰', label: t('products.beiwe.feature2.label'), body: t('products.beiwe.feature2.body') },
+  { emoji: '🔔', label: t('products.beiwe.feature3.label'), body: t('products.beiwe.feature3.body') },
+  { emoji: '📋', label: t('products.beiwe.feature4.label'), body: t('products.beiwe.feature4.body') },
+  { emoji: '☁️', label: t('products.beiwe.feature5.label'), body: t('products.beiwe.feature5.body') },
+  { emoji: '🤖🎙️', label: t('products.beiwe.feature6.label'), body: t('products.beiwe.feature6.body') },
+  { emoji: '🧾', label: t('products.beiwe.feature7.label'), body: t('products.beiwe.feature7.body') },
+];
+
+const userCostHeader = [
+  t('products.beiwe.pricing.userCost.header.profile'),
+  t('products.beiwe.pricing.userCost.header.price'),
+];
+const aiUsageHeader = [
+  t('products.beiwe.pricing.aiUsage.header.usage'),
+  t('products.beiwe.pricing.aiUsage.header.price'),
+];
+const aiUsageRows = [
+  [t('products.beiwe.pricing.aiUsage.row1.label'), t('products.beiwe.pricing.aiUsage.row1.value')],
+  [t('products.beiwe.pricing.aiUsage.row2.label'), 'R$ 5,00/h'],
+];
+
+const pricingPlans = [
+  {
+    title: t('products.beiwe.pricing.trial.title'),
+    body: t('products.beiwe.pricing.trial.body'),
+    userCost: null,
+    aiUsage: null,
+    summaryRows: [
+      [t('products.beiwe.pricing.cost.label'), 'R$ 0,00'],
+      [t('products.beiwe.pricing.duration.label'), t('products.beiwe.pricing.trial.duration.value')],
+    ],
+  },
+  {
+    title: t('products.beiwe.pricing.year1.title'),
+    body: t('products.beiwe.pricing.year1.body'),
+    userCost: [
+      [t('products.beiwe.pricing.userCost.admin'), 'R$ 80,00'],
+      [t('products.beiwe.pricing.userCost.collaborator'), 'R$ 25,00'],
+      [t('products.beiwe.pricing.userCost.patient'), 'R$ 3,00'],
+    ],
+    aiUsage: aiUsageRows,
+    summaryRows: [
+      [t('products.beiwe.pricing.year1.maxDuration.label'), t('products.beiwe.pricing.year1.maxDuration.value')],
+    ],
+  },
+  {
+    title: t('products.beiwe.pricing.laterYears.title'),
+    body: t('products.beiwe.pricing.laterYears.body'),
+    userCost: [
+      [t('products.beiwe.pricing.userCost.admin'), 'R$ 90,00'],
+      [t('products.beiwe.pricing.userCost.collaborator'), 'R$ 30,00'],
+      [t('products.beiwe.pricing.userCost.patient'), 'R$ 4,00'],
+    ],
+    aiUsage: aiUsageRows,
+    summaryRows: [
+      [t('products.beiwe.pricing.duration.label'), t('products.beiwe.pricing.laterYears.duration.value')],
+    ],
+  },
+];
+---
+
+<section class="flex flex-col items-center py-20 text-center">
+  <h2 class="font-monospace text-2xl text-orange lg:text-4xl">{t('products.title')}</h2>
+  <span class="mb-6 mt-2 h-1 w-10 bg-orange"></span>
+
+  <div class="w-full max-w-4xl">
+    <div class="rounded-2xl border border-gray-200 dark:border-gray-700 p-6 text-left transition-shadow hover:shadow-lg dark:hover:shadow-orange/10">
+      <h3 class="mb-3 text-xl font-bold text-black dark:text-white">
+        <span
+          class="cursor-help border-b border-dotted border-current opacity-90"
+          title={t('products.beiwe.origin')}
+        >
+          {t('products.beiwe.name')}
+        </span>
+      </h3>
+      <p class="mb-4 text-sm text-black dark:text-white opacity-80 leading-relaxed">
+        {t('products.beiwe.intro')}
+      </p>
+      <ul class="space-y-3">
+        {
+          beiweFeatures.map((feature) => (
+            <li class="flex gap-3">
+              <span class="w-6 flex-shrink-0 text-center" aria-hidden="true">{feature.emoji}</span>
+              <p class="text-sm leading-relaxed text-black dark:text-white opacity-80">
+                <span class="font-semibold opacity-100">{feature.label}:</span> {feature.body}
+              </p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <details class="group mt-16 w-full max-w-4xl">
+    <summary class="mb-8 flex cursor-pointer list-none flex-col items-center text-center">
+      <span class="inline-flex items-center gap-2 font-monospace text-xl text-orange lg:text-3xl">
+        {t('products.beiwe.pricing.title')}
+        <svg
+          class="h-4 w-4 flex-shrink-0 transition-transform duration-200 group-open:rotate-180"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </span>
+      <span class="mb-4 mt-2 h-1 w-10 bg-orange"></span>
+    </summary>
+
+    <div class="space-y-8">
+      {
+        pricingPlans.map((plan) => (
+          <div class="rounded-2xl border border-gray-200 dark:border-gray-700 p-6 text-left">
+            <h4 class="mb-1 text-base font-bold text-orange">{plan.title}</h4>
+            <p class="mb-4 text-sm text-black dark:text-white opacity-70">{plan.body}</p>
+
+            {plan.userCost && (
+              <div class="mb-4">
+                <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-black dark:text-white opacity-60">
+                  {t('products.beiwe.pricing.userCost.title')}
+                </p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm text-black dark:text-white border-collapse">
+                    <thead>
+                      <tr class="border-b border-gray-300 dark:border-gray-700">
+                        <th class="py-2 pr-4 text-left font-medium opacity-50">{userCostHeader[0]}</th>
+                        <th class="py-2 text-left font-medium opacity-50">{userCostHeader[1]}</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
+                      {plan.userCost.map(([label, price]) => (
+                        <tr>
+                          <td class="py-2 pr-4 opacity-80">{label}</td>
+                          <td class="py-2 opacity-80">{price}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {plan.aiUsage && (
+              <div class="mb-4">
+                <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-black dark:text-white opacity-60">
+                  {t('products.beiwe.pricing.aiUsage.title')}
+                </p>
+                <div class="overflow-x-auto">
+                  <table class="w-full text-sm text-black dark:text-white border-collapse">
+                    <thead>
+                      <tr class="border-b border-gray-300 dark:border-gray-700">
+                        <th class="py-2 pr-4 text-left font-medium opacity-50">{aiUsageHeader[0]}</th>
+                        <th class="py-2 text-left font-medium opacity-50">{aiUsageHeader[1]}</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
+                      {plan.aiUsage.map(([label, price]) => (
+                        <tr>
+                          <td class="py-2 pr-4 opacity-80">{label}</td>
+                          <td class="py-2 opacity-80">{price}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            <table class="w-full text-sm text-black dark:text-white border-collapse">
+              <tbody class="divide-y divide-gray-100 dark:divide-gray-800">
+                {plan.summaryRows.map(([label, value]) => (
+                  <tr>
+                    <td class="py-2 pr-4 font-medium opacity-60 w-1/3">{label}</td>
+                    <td class="py-2 opacity-80">{value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))
+      }
+    </div>
+  </details>
+</section>
+
+<style>
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary::marker {
+    content: '';
+  }
+</style>

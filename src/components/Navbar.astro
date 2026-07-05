@@ -13,13 +13,15 @@ const { lang } = Astro.props;
 const t = useTranslations(lang);
 
 const homeHref = lang === 'en' ? '/' : `/${lang}/`;
+const productsHref = lang === 'en' ? '/products/' : `/${lang}/products/`;
 
 const menuitems = [
   { title: t('nav.about'),      path: `${homeHref}#about` },
   { title: t('nav.ethos'),  path: `${homeHref}#ethos-and-values` },
   { title: t('nav.plans'),      path: `${homeHref}#plans` },
   { title: t('nav.contact'),    path: `${homeHref}#contact` },
-  { title: t('nav.techniques'), path: `/techniques/` },
+  { title: t('nav.products'),   path: productsHref },
+  // Temporarily hidden while under construction: { title: t('nav.techniques'), path: `/techniques/` },
 ];
 ---
 

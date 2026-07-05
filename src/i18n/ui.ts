@@ -14,6 +14,7 @@ export const ui = {
     'nav.plans': 'Plans',
     'nav.contact': 'Contact',
     'nav.techniques': 'Our Techniques',
+    'nav.products': 'Our Products',
 
     // Hero
     'hero.tagline': 'Software for small businesses and their unique complexities',
@@ -24,6 +25,62 @@ export const ui = {
     // Techniques page
     'techniques.title': 'Our Techniques',
     'techniques.subtitle': 'The data science and engineering methods behind our work.',
+
+    // Products page
+    'products.title': 'Our Products',
+    'products.subtitle': 'Coming soon.',
+    'products.beiwe.name': 'Beiwe',
+    'products.beiwe.origin':
+      'Beiwe is goddess of the sun, spring, and sanity for the Sàmi, the indigenous people of the Nordic countries. In Sàmi myth, Beiwe nourishes these people and their herds, helping her people maintain mental health during the difficult months of darkness.',
+    'products.beiwe.intro':
+      'Beiwe is a clinical management platform. It was designed with the help of specialists in Psychology and Occupational Therapy and, as such, tailored to their daily needs. It provides:',
+    'products.beiwe.feature1.label': 'Agenda',
+    'products.beiwe.feature1.body':
+      "An efficient agenda to keep track of your patients' appointments.",
+    'products.beiwe.feature2.label': 'Accounting',
+    'products.beiwe.feature2.body':
+      'A clean view of your costs and revenue, adding transparency to your business practice and fostering a healthy, controlled cash flow.',
+    'products.beiwe.feature3.label': 'Reminders',
+    'products.beiwe.feature3.body':
+      'Several reminders that help you and your team provide all that you can to your patients.',
+    'products.beiwe.feature4.label': 'Documentation consistency',
+    'products.beiwe.feature4.body':
+      "Forget about documents changing format all the time — you'll have consistent designs and templates to choose from.",
+    'products.beiwe.feature5.label': 'Reliability and cloud storage',
+    'products.beiwe.feature5.body':
+      "Do you remember the last time you needed a patient report and it was on the phone of a collaborator who was on vacation, with no way to reach her? We solve this too: now you can have clean, organized, centralized storage of documents, accessible from anywhere.",
+    'products.beiwe.feature6.label': 'Voice transcriptions',
+    'products.beiwe.feature6.body':
+      "Do you still type reports after every session? Now you can transcribe them using your voice instead. Even better: Beiwe uses AI to automatically parse your speech into the document sections you've previously defined.",
+    'products.beiwe.feature7.label': 'Invoices',
+    'products.beiwe.feature7.body':
+      'You can also use the software to generate invoices and keep track of your finances throughout the year. (Your accountant will thank you 😊)',
+
+    'products.beiwe.pricing.title': 'Pricing',
+    'products.beiwe.pricing.cost.label': 'Cost',
+    'products.beiwe.pricing.duration.label': 'Duration',
+    'products.beiwe.pricing.trial.title': 'Trial',
+    'products.beiwe.pricing.trial.body': 'Trial plan.',
+    'products.beiwe.pricing.trial.duration.value': '1–2 months',
+    'products.beiwe.pricing.year1.title': 'Year 1 Plan',
+    'products.beiwe.pricing.year1.body': 'First-year plan.',
+    'products.beiwe.pricing.year1.maxDuration.label': 'Maximum duration',
+    'products.beiwe.pricing.year1.maxDuration.value': '1 year',
+    'products.beiwe.pricing.laterYears.title': 'Following Years Plan',
+    'products.beiwe.pricing.laterYears.body': 'Plan for the years after the first.',
+    'products.beiwe.pricing.laterYears.duration.value': 'No restrictions',
+    'products.beiwe.pricing.userCost.title': 'Cost by user type',
+    'products.beiwe.pricing.userCost.header.profile': 'Profile',
+    'products.beiwe.pricing.userCost.header.price': 'Price/month',
+    'products.beiwe.pricing.userCost.admin': 'Admin',
+    'products.beiwe.pricing.userCost.collaborator': 'Collaborator',
+    'products.beiwe.pricing.userCost.patient': 'Patient (record access only)',
+    'products.beiwe.pricing.aiUsage.title': 'AI usage cost',
+    'products.beiwe.pricing.aiUsage.header.usage': 'Usage',
+    'products.beiwe.pricing.aiUsage.header.price': 'Price',
+    'products.beiwe.pricing.aiUsage.row1.label': 'First 2 hours of transcription',
+    'products.beiwe.pricing.aiUsage.row1.value': 'Free',
+    'products.beiwe.pricing.aiUsage.row2.label': 'Additional hours',
 
     // Services
     'services.title': 'Services',
@@ -153,6 +210,7 @@ export const ui = {
     'nav.plans': 'Planos',
     'nav.contact': 'Contato',
     'nav.techniques': 'Nossas Técnicas',
+    'nav.products': 'Nossos Produtos',
 
     // Hero
     'hero.tagline': 'Software para pequenas empresas e suas complexidades únicas',
@@ -163,6 +221,62 @@ export const ui = {
     // Techniques page
     'techniques.title': 'Nossas Técnicas',
     'techniques.subtitle': 'Os métodos de ciência de dados e engenharia por trás do nosso trabalho.',
+
+    // Products page
+    'products.title': 'Nossos Produtos',
+    'products.subtitle': 'Em breve.',
+    'products.beiwe.name': 'Beiwe',
+    'products.beiwe.origin':
+      'Beiwe é a deusa do sol, da primavera e da sanidade para os Sámi, o povo indígena dos países nórdicos. No mito Sámi, Beiwe nutre seu povo e seus rebanhos, ajudando-os a preservar a saúde mental durante os difíceis meses de escuridão.',
+    'products.beiwe.intro':
+      'Beiwe é uma plataforma de gestão clínica. Foi desenvolvida com a ajuda de especialistas em Psicologia e Terapia Ocupacional e, por isso, é adaptada às necessidades diárias desses profissionais. Ela oferece:',
+    'products.beiwe.feature1.label': 'Agenda',
+    'products.beiwe.feature1.body':
+      'Uma agenda eficiente para acompanhar os compromissos dos seus pacientes.',
+    'products.beiwe.feature2.label': 'Contabilidade',
+    'products.beiwe.feature2.body':
+      'Uma visão clara dos seus custos e receitas, trazendo transparência à sua prática e promovendo um fluxo de caixa saudável e controlado.',
+    'products.beiwe.feature3.label': 'Lembretes',
+    'products.beiwe.feature3.body':
+      'Vários lembretes que ajudam você e sua equipe a oferecer tudo o que podem aos seus pacientes.',
+    'products.beiwe.feature4.label': 'Consistência de documentação',
+    'products.beiwe.feature4.body':
+      'Esqueça documentos que mudam de formato o tempo todo — você terá modelos e designs consistentes para escolher.',
+    'products.beiwe.feature5.label': 'Confiabilidade e armazenamento em nuvem',
+    'products.beiwe.feature5.body':
+      'Lembra da última vez que precisou de um relatório de paciente e ele estava no celular de uma colaboradora que estava de férias, sem forma de contatá-la? Resolvemos isso também: agora você tem um armazenamento de documentos limpo, organizado e centralizado, acessível de qualquer lugar.',
+    'products.beiwe.feature6.label': 'Transcrições por voz',
+    'products.beiwe.feature6.body':
+      'Ainda digita relatórios depois de cada sessão? Agora você também pode transcrevê-los usando sua voz. Melhor ainda: o Beiwe usa IA para transformar automaticamente sua fala nas seções do documento que você definiu previamente.',
+    'products.beiwe.feature7.label': 'Faturas',
+    'products.beiwe.feature7.body':
+      'Você também pode usar o software para gerar faturas e acompanhar suas finanças ao longo do ano. (Seu contador vai agradecer 😊)',
+
+    'products.beiwe.pricing.title': 'Preços',
+    'products.beiwe.pricing.cost.label': 'Custo',
+    'products.beiwe.pricing.duration.label': 'Duração',
+    'products.beiwe.pricing.trial.title': 'Trial',
+    'products.beiwe.pricing.trial.body': 'Plano de testagem.',
+    'products.beiwe.pricing.trial.duration.value': '1 a 2 meses',
+    'products.beiwe.pricing.year1.title': 'Plano Ano 1',
+    'products.beiwe.pricing.year1.body': 'Plano de primeiro ano.',
+    'products.beiwe.pricing.year1.maxDuration.label': 'Duração máxima',
+    'products.beiwe.pricing.year1.maxDuration.value': '1 ano',
+    'products.beiwe.pricing.laterYears.title': 'Plano Demais Anos',
+    'products.beiwe.pricing.laterYears.body': 'Plano após o primeiro ano.',
+    'products.beiwe.pricing.laterYears.duration.value': 'Sem restrições',
+    'products.beiwe.pricing.userCost.title': 'Custo por tipo de usuário',
+    'products.beiwe.pricing.userCost.header.profile': 'Perfil',
+    'products.beiwe.pricing.userCost.header.price': 'Preço/mês',
+    'products.beiwe.pricing.userCost.admin': 'Admin',
+    'products.beiwe.pricing.userCost.collaborator': 'Colaborador',
+    'products.beiwe.pricing.userCost.patient': 'Paciente (somente com acesso a prontuário)',
+    'products.beiwe.pricing.aiUsage.title': 'Custo de uso de IA',
+    'products.beiwe.pricing.aiUsage.header.usage': 'Uso',
+    'products.beiwe.pricing.aiUsage.header.price': 'Preço',
+    'products.beiwe.pricing.aiUsage.row1.label': 'Primeiras 2 horas de transcrição',
+    'products.beiwe.pricing.aiUsage.row1.value': 'Gratuito',
+    'products.beiwe.pricing.aiUsage.row2.label': 'Horas adicionais',
 
     // Services
     'services.title': 'Serviços',
@@ -292,6 +406,7 @@ export const ui = {
     'nav.plans': 'Planes',
     'nav.contact': 'Contacto',
     'nav.techniques': 'Nuestras Técnicas',
+    'nav.products': 'Nuestros Productos',
 
     // Hero
     'hero.tagline': 'Software para pequeñas empresas y sus complejidades únicas',
@@ -302,6 +417,62 @@ export const ui = {
     // Techniques page
     'techniques.title': 'Nuestras Técnicas',
     'techniques.subtitle': 'Los métodos de ciencia de datos e ingeniería detrás de nuestro trabajo.',
+
+    // Products page
+    'products.title': 'Nuestros Productos',
+    'products.subtitle': 'Próximamente.',
+    'products.beiwe.name': 'Beiwe',
+    'products.beiwe.origin':
+      'Beiwe es la diosa del sol, la primavera y la cordura para los Sámi, el pueblo indígena de los países nórdicos. En el mito Sámi, Beiwe nutre a su pueblo y sus rebaños, ayudándolos a mantener la salud mental durante los difíciles meses de oscuridad.',
+    'products.beiwe.intro':
+      'Beiwe es una plataforma de gestión clínica. Fue diseñada con la ayuda de especialistas en Psicología y Terapia Ocupacional y, como tal, está adaptada a sus necesidades diarias. Ofrece:',
+    'products.beiwe.feature1.label': 'Agenda',
+    'products.beiwe.feature1.body':
+      'Una agenda eficiente para llevar el control de las citas de sus pacientes.',
+    'products.beiwe.feature2.label': 'Contabilidad',
+    'products.beiwe.feature2.body':
+      'Una vista clara de sus costos e ingresos, aportando transparencia a su práctica y fomentando un flujo de caja saludable y controlado.',
+    'products.beiwe.feature3.label': 'Recordatorios',
+    'products.beiwe.feature3.body':
+      'Varios recordatorios que ayudan a usted y a su equipo a brindar todo lo posible a sus pacientes.',
+    'products.beiwe.feature4.label': 'Consistencia de documentación',
+    'products.beiwe.feature4.body':
+      'Olvídese de que los documentos cambien de formato constantemente: tendrá diseños y plantillas consistentes entre los que elegir.',
+    'products.beiwe.feature5.label': 'Confiabilidad y almacenamiento en la nube',
+    'products.beiwe.feature5.body':
+      '¿Recuerda la última vez que necesitó el informe de un paciente y estaba en el celular de una colaboradora que estaba de vacaciones, sin forma de contactarla? También resolvemos esto: ahora puede tener un almacenamiento de documentos limpio, organizado y centralizado, accesible desde cualquier lugar.',
+    'products.beiwe.feature6.label': 'Transcripciones por voz',
+    'products.beiwe.feature6.body':
+      '¿Todavía escribe los informes después de cada sesión? Ahora también puede transcribirlos usando su voz. Mejor aún: Beiwe usa IA para transformar automáticamente su voz en las secciones del documento que haya definido previamente.',
+    'products.beiwe.feature7.label': 'Facturas',
+    'products.beiwe.feature7.body':
+      'También puede usar el software para generar facturas y llevar el control de sus finanzas durante todo el año. (Su contador se lo agradecerá 😊)',
+
+    'products.beiwe.pricing.title': 'Precios',
+    'products.beiwe.pricing.cost.label': 'Costo',
+    'products.beiwe.pricing.duration.label': 'Duración',
+    'products.beiwe.pricing.trial.title': 'Trial',
+    'products.beiwe.pricing.trial.body': 'Plan de prueba.',
+    'products.beiwe.pricing.trial.duration.value': '1 a 2 meses',
+    'products.beiwe.pricing.year1.title': 'Plan Año 1',
+    'products.beiwe.pricing.year1.body': 'Plan del primer año.',
+    'products.beiwe.pricing.year1.maxDuration.label': 'Duración máxima',
+    'products.beiwe.pricing.year1.maxDuration.value': '1 año',
+    'products.beiwe.pricing.laterYears.title': 'Plan Años Siguientes',
+    'products.beiwe.pricing.laterYears.body': 'Plan para los años posteriores al primero.',
+    'products.beiwe.pricing.laterYears.duration.value': 'Sin restricciones',
+    'products.beiwe.pricing.userCost.title': 'Costo por tipo de usuario',
+    'products.beiwe.pricing.userCost.header.profile': 'Perfil',
+    'products.beiwe.pricing.userCost.header.price': 'Precio/mes',
+    'products.beiwe.pricing.userCost.admin': 'Admin',
+    'products.beiwe.pricing.userCost.collaborator': 'Colaborador',
+    'products.beiwe.pricing.userCost.patient': 'Paciente (solo con acceso al historial)',
+    'products.beiwe.pricing.aiUsage.title': 'Costo de uso de IA',
+    'products.beiwe.pricing.aiUsage.header.usage': 'Uso',
+    'products.beiwe.pricing.aiUsage.header.price': 'Precio',
+    'products.beiwe.pricing.aiUsage.row1.label': 'Primeras 2 horas de transcripción',
+    'products.beiwe.pricing.aiUsage.row1.value': 'Gratis',
+    'products.beiwe.pricing.aiUsage.row2.label': 'Horas adicionales',
 
     // Services
     'services.title': 'Servicios',

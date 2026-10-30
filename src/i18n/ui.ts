@@ -33,28 +33,48 @@ export const ui = {
     'products.beiwe.origin':
       'Beiwe is goddess of the sun, spring, and sanity for the Sàmi, the indigenous people of the Nordic countries. In Sàmi myth, Beiwe nourishes these people and their herds, helping her people maintain mental health during the difficult months of darkness.',
     'products.beiwe.intro':
-      'Beiwe is a clinical management platform. It was designed with the help of specialists in Psychology and Occupational Therapy and, as such, tailored to their daily needs. It provides:',
-    'products.beiwe.feature1.label': 'Agenda',
-    'products.beiwe.feature1.body':
-      "An efficient agenda to keep track of your patients' appointments.",
-    'products.beiwe.feature2.label': 'Accounting',
-    'products.beiwe.feature2.body':
-      'A clean view of your costs and revenue, adding transparency to your business practice and fostering a healthy, controlled cash flow.',
-    'products.beiwe.feature3.label': 'Reminders',
-    'products.beiwe.feature3.body':
-      'Several reminders that help you and your team provide all that you can to your patients.',
-    'products.beiwe.feature4.label': 'Documentation consistency',
-    'products.beiwe.feature4.body':
+      'Beiwe is a clinical management platform. It was designed with the help of specialists in Psychology and Occupational Therapy and, as such, tailored to their daily needs. Since it runs in the browser, you can use it from your computer, tablet or phone, wherever you are, with nothing to install. It provides:',
+    'products.beiwe.agenda.label': 'Agenda',
+    'products.beiwe.agenda.body':
+      "An efficient agenda to keep track of your patients' appointments, synced with Google Calendar so your schedule is always at hand.",
+    'products.beiwe.patients.label': 'Patient records',
+    'products.beiwe.patients.body':
+      'Complete patient profiles, including guardian information, which is essential when working with children and adolescents.',
+    'products.beiwe.team.label': 'Team & locations',
+    'products.beiwe.team.body':
+      'Bring your whole team on board. Each professional gets their own access, all under one clinic account, even if you work across multiple offices.',
+    'products.beiwe.finances.label': 'Finances',
+    'products.beiwe.finances.body':
+      'Everything you need to keep a healthy, controlled cash flow:',
+    'products.beiwe.finances.accounting.label': 'Accounting',
+    'products.beiwe.finances.accounting.body':
+      'A clean view of your costs and revenue, with charts and reports that add transparency to your business practice.',
+    'products.beiwe.finances.multiCurrency.label': 'Multi-currency',
+    'products.beiwe.finances.multiCurrency.body':
+      'Have patients abroad? Charge and track payments in different currencies without mixing up your numbers.',
+    'products.beiwe.finances.invoices.label': 'Invoices',
+    'products.beiwe.finances.invoices.body':
+      'Generate invoices and keep track of your finances throughout the year. (Your accountant will thank you 😊)',
+    'products.beiwe.documents.label': 'Reports & documents',
+    'products.beiwe.documents.body':
+      'Professional documents, every time:',
+    'products.beiwe.documents.templates.label': 'Consistent templates',
+    'products.beiwe.documents.templates.body':
       "Forget about documents changing format all the time — you'll have consistent designs and templates to choose from.",
-    'products.beiwe.feature5.label': 'Reliability and cloud storage',
-    'products.beiwe.feature5.body':
-      "Do you remember the last time you needed a patient report and it was on the phone of a collaborator who was on vacation, with no way to reach her? We solve this too: now you can have clean, organized, centralized storage of documents, accessible from anywhere.",
-    'products.beiwe.feature6.label': 'Voice transcriptions',
-    'products.beiwe.feature6.body':
+    'products.beiwe.documents.signatures.label': 'Digital signatures',
+    'products.beiwe.documents.signatures.body':
+      "Sign your reports digitally, with a trusted timestamp that proves when they were signed and that they haven't been altered since. Ready to send to schools, doctors, courts or health insurers.",
+    'products.beiwe.transcriptions.label': 'Voice transcriptions',
+    'products.beiwe.transcriptions.body':
       "Do you still type reports after every session? Now you can transcribe them using your voice instead. Even better: Beiwe uses AI to automatically parse your speech into the document sections you've previously defined.",
-    'products.beiwe.feature7.label': 'Invoices',
-    'products.beiwe.feature7.body':
-      'You can also use the software to generate invoices and keep track of your finances throughout the year. (Your accountant will thank you 😊)',
+    'products.beiwe.storage.label': 'Secure cloud storage',
+    'products.beiwe.storage.body':
+      "Do you remember the last time you needed a patient report and it was on the phone of a collaborator who was on vacation, with no way to reach her? We solve this too: all your documents are stored in one clean, organized place, accessible from any device, anywhere. And because your patients' data is sensitive, we treat it that way: every clinic's files are encrypted with their own key, and personal information is encrypted in our database too, in line with the LGPD.",
+    'products.beiwe.reminders.label': 'Reminders',
+    'products.beiwe.reminders.body':
+      'Several reminders that help you and your team provide all that you can to your patients.',
+    'products.beiwe.cta.prefix': 'Want to see it in action? Get in touch at',
+    'products.beiwe.cta.suffix': 'and schedule a demo.',
 
     'products.beiwe.pricing.title': 'Pricing',
     'products.beiwe.pricing.cost.label': 'Cost',
@@ -229,28 +249,48 @@ export const ui = {
     'products.beiwe.origin':
       'Beiwe é a deusa do sol, da primavera e da sanidade para os Sámi, o povo indígena dos países nórdicos. No mito Sámi, Beiwe nutre seu povo e seus rebanhos, ajudando-os a preservar a saúde mental durante os difíceis meses de escuridão.',
     'products.beiwe.intro':
-      'Beiwe é uma plataforma de gestão clínica. Foi desenvolvida com a ajuda de especialistas em Psicologia e Terapia Ocupacional e, por isso, é adaptada às necessidades diárias desses profissionais. Ela oferece:',
-    'products.beiwe.feature1.label': 'Agenda',
-    'products.beiwe.feature1.body':
-      'Uma agenda eficiente para acompanhar os compromissos dos seus pacientes.',
-    'products.beiwe.feature2.label': 'Contabilidade',
-    'products.beiwe.feature2.body':
-      'Uma visão clara dos seus custos e receitas, trazendo transparência à sua prática e promovendo um fluxo de caixa saudável e controlado.',
-    'products.beiwe.feature3.label': 'Lembretes',
-    'products.beiwe.feature3.body':
-      'Vários lembretes que ajudam você e sua equipe a oferecer tudo o que podem aos seus pacientes.',
-    'products.beiwe.feature4.label': 'Consistência de documentação',
-    'products.beiwe.feature4.body':
+      'Beiwe é uma plataforma de gestão clínica. Foi desenvolvida com a ajuda de especialistas em Psicologia e Terapia Ocupacional e, por isso, é adaptada às necessidades diárias desses profissionais. Como funciona no navegador, você pode usá-la no computador, tablet ou celular, onde estiver, sem precisar instalar nada. Ela oferece:',
+    'products.beiwe.agenda.label': 'Agenda',
+    'products.beiwe.agenda.body':
+      'Uma agenda eficiente para acompanhar os atendimentos dos seus pacientes, sincronizada com o Google Agenda para que seus compromissos estejam sempre à mão.',
+    'products.beiwe.patients.label': 'Prontuários',
+    'products.beiwe.patients.body':
+      'Perfis completos dos pacientes, incluindo informações dos responsáveis, algo essencial no atendimento de crianças e adolescentes.',
+    'products.beiwe.team.label': 'Equipe e unidades',
+    'products.beiwe.team.body':
+      'Traga toda a sua equipe. Cada profissional tem seu próprio acesso, tudo sob uma única conta da clínica, mesmo que vocês atendam em vários consultórios.',
+    'products.beiwe.finances.label': 'Finanças',
+    'products.beiwe.finances.body':
+      'Tudo o que você precisa para manter um fluxo de caixa saudável e controlado:',
+    'products.beiwe.finances.accounting.label': 'Contabilidade',
+    'products.beiwe.finances.accounting.body':
+      'Uma visão clara dos seus custos e receitas, com gráficos e relatórios que trazem transparência à sua prática.',
+    'products.beiwe.finances.multiCurrency.label': 'Múltiplas moedas',
+    'products.beiwe.finances.multiCurrency.body':
+      'Tem pacientes no exterior? Cobre e acompanhe pagamentos em diferentes moedas sem misturar seus números.',
+    'products.beiwe.finances.invoices.label': 'Notas fiscais',
+    'products.beiwe.finances.invoices.body':
+      'Gere notas fiscais e acompanhe suas finanças ao longo do ano. (Seu contador vai agradecer 😊)',
+    'products.beiwe.documents.label': 'Relatórios e documentos',
+    'products.beiwe.documents.body':
+      'Documentos profissionais, sempre:',
+    'products.beiwe.documents.templates.label': 'Modelos consistentes',
+    'products.beiwe.documents.templates.body':
       'Esqueça documentos que mudam de formato o tempo todo — você terá modelos e designs consistentes para escolher.',
-    'products.beiwe.feature5.label': 'Confiabilidade e armazenamento em nuvem',
-    'products.beiwe.feature5.body':
-      'Lembra da última vez que precisou de um relatório de paciente e ele estava no celular de uma colaboradora que estava de férias, sem forma de contatá-la? Resolvemos isso também: agora você tem um armazenamento de documentos limpo, organizado e centralizado, acessível de qualquer lugar.',
-    'products.beiwe.feature6.label': 'Transcrições por voz',
-    'products.beiwe.feature6.body':
+    'products.beiwe.documents.signatures.label': 'Assinaturas digitais',
+    'products.beiwe.documents.signatures.body':
+      'Assine seus relatórios digitalmente, com um carimbo de tempo confiável que comprova quando foram assinados e que não foram alterados desde então. Prontos para enviar a escolas, médicos, tribunais ou planos de saúde.',
+    'products.beiwe.transcriptions.label': 'Transcrições por voz',
+    'products.beiwe.transcriptions.body':
       'Ainda digita relatórios depois de cada sessão? Agora você também pode transcrevê-los usando sua voz. Melhor ainda: o Beiwe usa IA para transformar automaticamente sua fala nas seções do documento que você definiu previamente.',
-    'products.beiwe.feature7.label': 'Faturas',
-    'products.beiwe.feature7.body':
-      'Você também pode usar o software para gerar faturas e acompanhar suas finanças ao longo do ano. (Seu contador vai agradecer 😊)',
+    'products.beiwe.storage.label': 'Armazenamento seguro em nuvem',
+    'products.beiwe.storage.body':
+      'Lembra da última vez que precisou de um relatório de paciente e ele estava no celular de uma colaboradora que estava de férias, sem forma de contatá-la? Resolvemos isso também: todos os seus documentos ficam guardados em um só lugar, limpo e organizado, acessível de qualquer dispositivo, em qualquer lugar. E como os dados dos seus pacientes são sensíveis, nós os tratamos assim: os arquivos de cada clínica são criptografados com sua própria chave, e as informações pessoais também são criptografadas em nosso banco de dados, em conformidade com a LGPD.',
+    'products.beiwe.reminders.label': 'Lembretes',
+    'products.beiwe.reminders.body':
+      'Vários lembretes que ajudam você e sua equipe a oferecer tudo o que podem aos seus pacientes.',
+    'products.beiwe.cta.prefix': 'Quer ver o Beiwe em ação? Entre em contato pelo',
+    'products.beiwe.cta.suffix': 'e agende uma demonstração.',
 
     'products.beiwe.pricing.title': 'Preços',
     'products.beiwe.pricing.cost.label': 'Custo',
@@ -425,28 +465,48 @@ export const ui = {
     'products.beiwe.origin':
       'Beiwe es la diosa del sol, la primavera y la cordura para los Sámi, el pueblo indígena de los países nórdicos. En el mito Sámi, Beiwe nutre a su pueblo y sus rebaños, ayudándolos a mantener la salud mental durante los difíciles meses de oscuridad.',
     'products.beiwe.intro':
-      'Beiwe es una plataforma de gestión clínica. Fue diseñada con la ayuda de especialistas en Psicología y Terapia Ocupacional y, como tal, está adaptada a sus necesidades diarias. Ofrece:',
-    'products.beiwe.feature1.label': 'Agenda',
-    'products.beiwe.feature1.body':
-      'Una agenda eficiente para llevar el control de las citas de sus pacientes.',
-    'products.beiwe.feature2.label': 'Contabilidad',
-    'products.beiwe.feature2.body':
-      'Una vista clara de sus costos e ingresos, aportando transparencia a su práctica y fomentando un flujo de caja saludable y controlado.',
-    'products.beiwe.feature3.label': 'Recordatorios',
-    'products.beiwe.feature3.body':
-      'Varios recordatorios que ayudan a usted y a su equipo a brindar todo lo posible a sus pacientes.',
-    'products.beiwe.feature4.label': 'Consistencia de documentación',
-    'products.beiwe.feature4.body':
+      'Beiwe es una plataforma de gestión clínica. Fue diseñada con la ayuda de especialistas en Psicología y Terapia Ocupacional y, como tal, está adaptada a sus necesidades diarias. Como funciona en el navegador, puede usarla desde su computadora, tableta o teléfono, dondequiera que esté, sin instalar nada. Ofrece:',
+    'products.beiwe.agenda.label': 'Agenda',
+    'products.beiwe.agenda.body':
+      'Una agenda eficiente para llevar el control de las citas de sus pacientes, sincronizada con Google Calendar para que su agenda esté siempre a mano.',
+    'products.beiwe.patients.label': 'Historias clínicas',
+    'products.beiwe.patients.body':
+      'Perfiles completos de los pacientes, incluida la información de sus tutores, algo esencial al trabajar con niños y adolescentes.',
+    'products.beiwe.team.label': 'Equipo y sedes',
+    'products.beiwe.team.body':
+      'Sume a todo su equipo. Cada profesional tiene su propio acceso, todo bajo una única cuenta de la clínica, incluso si trabajan en varios consultorios.',
+    'products.beiwe.finances.label': 'Finanzas',
+    'products.beiwe.finances.body':
+      'Todo lo que necesita para mantener un flujo de caja saludable y controlado:',
+    'products.beiwe.finances.accounting.label': 'Contabilidad',
+    'products.beiwe.finances.accounting.body':
+      'Una vista clara de sus costos e ingresos, con gráficos e informes que aportan transparencia a su práctica.',
+    'products.beiwe.finances.multiCurrency.label': 'Múltiples monedas',
+    'products.beiwe.finances.multiCurrency.body':
+      '¿Tiene pacientes en el exterior? Cobre y controle pagos en diferentes monedas sin mezclar sus números.',
+    'products.beiwe.finances.invoices.label': 'Facturas',
+    'products.beiwe.finances.invoices.body':
+      'Genere facturas y lleve el control de sus finanzas durante todo el año. (Su contador se lo agradecerá 😊)',
+    'products.beiwe.documents.label': 'Informes y documentos',
+    'products.beiwe.documents.body':
+      'Documentos profesionales, siempre:',
+    'products.beiwe.documents.templates.label': 'Plantillas consistentes',
+    'products.beiwe.documents.templates.body':
       'Olvídese de que los documentos cambien de formato constantemente: tendrá diseños y plantillas consistentes entre los que elegir.',
-    'products.beiwe.feature5.label': 'Confiabilidad y almacenamiento en la nube',
-    'products.beiwe.feature5.body':
-      '¿Recuerda la última vez que necesitó el informe de un paciente y estaba en el celular de una colaboradora que estaba de vacaciones, sin forma de contactarla? También resolvemos esto: ahora puede tener un almacenamiento de documentos limpio, organizado y centralizado, accesible desde cualquier lugar.',
-    'products.beiwe.feature6.label': 'Transcripciones por voz',
-    'products.beiwe.feature6.body':
+    'products.beiwe.documents.signatures.label': 'Firmas digitales',
+    'products.beiwe.documents.signatures.body':
+      'Firme sus informes digitalmente, con un sello de tiempo confiable que demuestra cuándo fueron firmados y que no han sido alterados desde entonces. Listos para enviar a escuelas, médicos, tribunales o aseguradoras de salud.',
+    'products.beiwe.transcriptions.label': 'Transcripciones por voz',
+    'products.beiwe.transcriptions.body':
       '¿Todavía escribe los informes después de cada sesión? Ahora también puede transcribirlos usando su voz. Mejor aún: Beiwe usa IA para transformar automáticamente su voz en las secciones del documento que haya definido previamente.',
-    'products.beiwe.feature7.label': 'Facturas',
-    'products.beiwe.feature7.body':
-      'También puede usar el software para generar facturas y llevar el control de sus finanzas durante todo el año. (Su contador se lo agradecerá 😊)',
+    'products.beiwe.storage.label': 'Almacenamiento seguro en la nube',
+    'products.beiwe.storage.body':
+      '¿Recuerda la última vez que necesitó el informe de un paciente y estaba en el celular de una colaboradora que estaba de vacaciones, sin forma de contactarla? También resolvemos esto: todos sus documentos quedan guardados en un solo lugar, limpio y organizado, accesible desde cualquier dispositivo, en cualquier lugar. Y como los datos de sus pacientes son sensibles, los tratamos como tales: los archivos de cada clínica se cifran con su propia clave, y la información personal también se cifra en nuestra base de datos, en conformidad con la LGPD.',
+    'products.beiwe.reminders.label': 'Recordatorios',
+    'products.beiwe.reminders.body':
+      'Varios recordatorios que ayudan a usted y a su equipo a brindar todo lo posible a sus pacientes.',
+    'products.beiwe.cta.prefix': '¿Quiere verlo en acción? Contáctenos en',
+    'products.beiwe.cta.suffix': 'y agende una demostración.',
 
     'products.beiwe.pricing.title': 'Precios',
     'products.beiwe.pricing.cost.label': 'Costo',

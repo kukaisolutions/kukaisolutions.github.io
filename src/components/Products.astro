@@ -10,13 +10,31 @@ const { lang } = Astro.props;
 const t = useTranslations(lang);
 
 const beiweFeatures = [
-  { emoji: '📅', label: t('products.beiwe.feature1.label'), body: t('products.beiwe.feature1.body') },
-  { emoji: '💰', label: t('products.beiwe.feature2.label'), body: t('products.beiwe.feature2.body') },
-  { emoji: '🔔', label: t('products.beiwe.feature3.label'), body: t('products.beiwe.feature3.body') },
-  { emoji: '📋', label: t('products.beiwe.feature4.label'), body: t('products.beiwe.feature4.body') },
-  { emoji: '☁️', label: t('products.beiwe.feature5.label'), body: t('products.beiwe.feature5.body') },
-  { emoji: '🤖🎙️', label: t('products.beiwe.feature6.label'), body: t('products.beiwe.feature6.body') },
-  { emoji: '🧾', label: t('products.beiwe.feature7.label'), body: t('products.beiwe.feature7.body') },
+  { emoji: '📅', label: t('products.beiwe.agenda.label'), body: t('products.beiwe.agenda.body') },
+  { emoji: '👥', label: t('products.beiwe.patients.label'), body: t('products.beiwe.patients.body') },
+  { emoji: '👩‍⚕️', label: t('products.beiwe.team.label'), body: t('products.beiwe.team.body') },
+  {
+    emoji: '💰',
+    label: t('products.beiwe.finances.label'),
+    body: t('products.beiwe.finances.body'),
+    items: [
+      { label: t('products.beiwe.finances.accounting.label'), body: t('products.beiwe.finances.accounting.body') },
+      { label: t('products.beiwe.finances.multiCurrency.label'), body: t('products.beiwe.finances.multiCurrency.body') },
+      { label: t('products.beiwe.finances.invoices.label'), body: t('products.beiwe.finances.invoices.body') },
+    ],
+  },
+  {
+    emoji: '📋',
+    label: t('products.beiwe.documents.label'),
+    body: t('products.beiwe.documents.body'),
+    items: [
+      { label: t('products.beiwe.documents.templates.label'), body: t('products.beiwe.documents.templates.body') },
+      { label: t('products.beiwe.documents.signatures.label'), body: t('products.beiwe.documents.signatures.body') },
+    ],
+  },
+  { emoji: '🤖🎙️', label: t('products.beiwe.transcriptions.label'), body: t('products.beiwe.transcriptions.body') },
+  { emoji: '☁️🔒', label: t('products.beiwe.storage.label'), body: t('products.beiwe.storage.body') },
+  { emoji: '🔔', label: t('products.beiwe.reminders.label'), body: t('products.beiwe.reminders.body') },
 ];
 
 const userCostHeader = [
@@ -94,13 +112,32 @@ const pricingPlans = [
           beiweFeatures.map((feature) => (
             <li class="flex gap-3">
               <span class="w-6 flex-shrink-0 text-center" aria-hidden="true">{feature.emoji}</span>
-              <p class="text-sm leading-relaxed text-black dark:text-white opacity-80">
-                <span class="font-semibold opacity-100">{feature.label}:</span> {feature.body}
-              </p>
+              <div class="text-sm leading-relaxed text-black dark:text-white opacity-80">
+                <p>
+                  <span class="font-semibold opacity-100">{feature.label}:</span> {feature.body}
+                </p>
+                {feature.items && (
+                  <ul class="mt-2 list-disc space-y-1 pl-5">
+                    {feature.items.map((item) => (
+                      <li>
+                        <span class="font-semibold opacity-100">{item.label}:</span> {item.body}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </li>
           ))
         }
       </ul>
+      <p class="mt-6 flex gap-3 text-sm leading-relaxed text-black dark:text-white opacity-80">
+        <span class="w-6 flex-shrink-0 text-center" aria-hidden="true">📩</span>
+        <span>
+          {t('products.beiwe.cta.prefix')}{' '}
+          <a href="mailto:contato@kukaisolutions.com" class="font-semibold text-orange hover:underline">contato@kukaisolutions.com</a>{' '}
+          {t('products.beiwe.cta.suffix')}
+        </span>
+      </p>
     </div>
   </div>
 

@@ -15,6 +15,14 @@ export const ui = {
     'nav.contact': 'Contact',
     'nav.techniques': 'Our Techniques',
     'nav.products': 'Our Products',
+    'nav.articles': 'Articles',
+
+    // Articles
+    'articles.title': 'Articles',
+    'articles.intro': 'Reflections on management, technology and the day-to-day of small businesses.',
+    'articles.read': 'Read article',
+    'articles.ptOnly': 'In Portuguese',
+    'articles.back': '← Back to articles',
 
     // Hero
     'hero.tagline': 'Software for small businesses and their unique complexities',
@@ -231,6 +239,14 @@ export const ui = {
     'nav.contact': 'Contato',
     'nav.techniques': 'Nossas Técnicas',
     'nav.products': 'Nossos Produtos',
+    'nav.articles': 'Artigos',
+
+    // Articles
+    'articles.title': 'Artigos',
+    'articles.intro': 'Reflexões sobre gestão, tecnologia e o dia a dia de pequenas empresas.',
+    'articles.read': 'Ler artigo',
+    'articles.ptOnly': 'Em português',
+    'articles.back': '← Voltar para os artigos',
 
     // Hero
     'hero.tagline': 'Software para pequenas empresas e suas complexidades únicas',
@@ -447,6 +463,14 @@ export const ui = {
     'nav.contact': 'Contacto',
     'nav.techniques': 'Nuestras Técnicas',
     'nav.products': 'Nuestros Productos',
+    'nav.articles': 'Artículos',
+
+    // Articles
+    'articles.title': 'Artículos',
+    'articles.intro': 'Reflexiones sobre gestión, tecnología y el día a día de las pequeñas empresas.',
+    'articles.read': 'Leer artículo',
+    'articles.ptOnly': 'En portugués',
+    'articles.back': '← Volver a los artículos',
 
     // Hero
     'hero.tagline': 'Software para pequeñas empresas y sus complejidades únicas',

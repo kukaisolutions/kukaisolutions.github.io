@@ -1,0 +1,44 @@
+---
+import { useTranslations } from '@i18n/ui';
+import type { Lang } from '@i18n/ui';
+import { articles, articleHref } from '../data/articles';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<section id="articles" class="flex flex-col items-center py-10 lg:flex-row lg:items-start lg:gap-12">
+  <div class="mb-8 flex flex-col items-center lg:mb-0 lg:w-1/4 lg:items-start">
+    <h1 class="font-monospace text-2xl font-bold tracking-wide text-orange lg:text-4xl">{t('articles.title')}</h1>
+    <span class="mb-6 mt-2 h-1 w-10 bg-orange"></span>
+  </div>
+
+  <div class="w-full max-w-2xl text-black dark:text-white lg:w-3/5">
+    <p class="mb-8 opacity-80">{t('articles.intro')}</p>
+    <ul class="space-y-6">
+      {
+        articles.map((a) => (
+          <li>
+            <a
+              href={articleHref(a)}
+              lang={a.lang}
+              class="group block rounded-lg border border-gray-200 bg-white/60 p-6 transition-colors hover:border-orange dark:border-gray-700 dark:bg-black/40 dark:hover:border-orange"
+            >
+              <p class="mb-2 text-xs uppercase tracking-wide opacity-60">
+                {a.date[lang]} · {a.author}
+                {a.lang !== lang && <span class="ml-2 rounded bg-orange px-1.5 py-0.5 normal-case text-white">{t('articles.ptOnly')}</span>}
+              </p>
+              <h2 class="mb-3 text-lg leading-snug group-hover:text-orange">{a.title}</h2>
+              <p class="mb-4 text-sm leading-relaxed opacity-80" lang={lang}>{a.summary[lang]}</p>
+              <span class="text-sm font-semibold text-orange" lang={lang}>{t('articles.read')} →</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

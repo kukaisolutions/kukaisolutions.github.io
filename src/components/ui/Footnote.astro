@@ -1,0 +1,59 @@
+---
+// Inline footnote: a superscript marker that reveals its note on hover, or on
+// tap/keyboard focus. On desktop the note opens above the marker, flipping
+// below when there is no room and shifting sideways to stay on screen. On small
+// screens it is pinned to the bottom of the viewport.
+interface Props {
+  n: number;
+}
+
+const { n } = Astro.props;
+const id = `nota-${n}`;
+---
+
+<style>
+  .tip {
+    hyphens: manual;
+    text-align: left;
+  }
+  .footnote.below > .tip {
+    top: 100%;
+    bottom: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+</style>
+
+<script>
+  const MARGIN = 8;
+  document.querySelectorAll<HTMLElement>('[data-footnote]').forEach((wrap) => {
+    const tip = wrap.querySelector<HTMLElement>('[role="tooltip"]');
+    if (!tip) return;
+    const place = () => {
+      if (window.matchMedia('(max-width: 639px)').matches) return;
+      // The tip is laid out even while hidden, so it can be measured first.
+      wrap.classList.remove('below');
+      tip.style.marginLeft = '';
+      if (tip.getBoundingClientRect().top < MARGIN) wrap.classList.add('below');
+      const r = tip.getBoundingClientRect();
+      if (r.left < MARGIN) tip.style.marginLeft = `${MARGIN - r.left}px`;
+      else if (r.right > window.innerWidth - MARGIN) tip.style.marginLeft = `${window.innerWidth - MARGIN - r.right}px`;
+    };
+    wrap.addEventListener('mouseenter', place);
+    wrap.addEventListener('focusin', place);
+  });
+</script><span class="footnote group relative inline-block" data-footnote>
+  <button
+    type="button"
+    aria-describedby={id}
+    aria-label={`Nota ${n}`}
+    class="cursor-help align-super text-xs font-semibold leading-none text-orange focus:outline-none focus-visible:underline"
+  >[{n}]</button>
+  <span
+    id={id}
+    role="tooltip"
+    class="tip invisible absolute bottom-full left-1/2 z-30 mb-2 max-h-[70vh] w-80 -translate-x-1/2 overflow-y-auto rounded-md border border-orange bg-white p-4 text-left text-sm font-normal not-italic leading-relaxed text-black opacity-0 shadow-lg transition-opacity duration-150 group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100 dark:bg-gray-900 dark:text-white max-sm:fixed max-sm:bottom-4 max-sm:left-4 max-sm:right-4 max-sm:mb-0 max-sm:w-auto max-sm:translate-x-0"
+  >
+    <slot />
+  </span>
+</span>

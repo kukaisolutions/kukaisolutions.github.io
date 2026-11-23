@@ -1,7 +1,7 @@
 ---
 import { useTranslations } from '@i18n/ui';
 import type { Lang } from '@i18n/ui';
-import { articles, articleHref } from '../data/articles';
+import { articles, articleHref, articleLang, articleVersion } from '../data/articles';
 
 interface Props {
   lang: Lang;
@@ -24,15 +24,15 @@ const t = useTranslations(lang);
         articles.map((a) => (
           <li>
             <a
-              href={articleHref(a)}
-              lang={a.lang}
+              href={articleHref(a, lang)}
+              lang={articleLang(a, lang)}
               class="group block rounded-lg border border-gray-200 bg-white/60 p-6 transition-colors hover:border-orange dark:border-gray-700 dark:bg-black/40 dark:hover:border-orange"
             >
               <p class="mb-2 text-xs uppercase tracking-wide opacity-60">
                 {a.date[lang]} · {a.author}
-                {a.lang !== lang && <span class="ml-2 rounded bg-orange px-1.5 py-0.5 normal-case text-white">{t('articles.ptOnly')}</span>}
+                {articleLang(a, lang) === 'pt' && lang !== 'pt' && <span class="ml-2 rounded bg-orange px-1.5 py-0.5 normal-case text-white">{t('articles.ptOnly')}</span>}
               </p>
-              <h2 class="mb-3 text-lg leading-snug group-hover:text-orange">{a.title}</h2>
+              <h2 class="mb-3 text-lg leading-snug group-hover:text-orange">{articleVersion(a, lang).title}</h2>
               <p class="mb-4 text-sm leading-relaxed opacity-80" lang={lang}>{a.summary[lang]}</p>
               <span class="text-sm font-semibold text-orange" lang={lang}>{t('articles.read')} →</span>
             </a>

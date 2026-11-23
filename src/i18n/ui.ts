@@ -23,6 +23,7 @@ export const ui = {
     'articles.read': 'Read article',
     'articles.ptOnly': 'In Portuguese',
     'articles.back': '← Back to articles',
+    'articles.otherLangs': 'Also available in',
 
     // Hero
     'hero.tagline': 'Software for small businesses and their unique complexities',
@@ -247,6 +248,7 @@ export const ui = {
     'articles.read': 'Ler artigo',
     'articles.ptOnly': 'Em português',
     'articles.back': '← Voltar para os artigos',
+    'articles.otherLangs': 'Também disponível em',
 
     // Hero
     'hero.tagline': 'Software para pequenas empresas e suas complexidades únicas',
@@ -471,6 +473,7 @@ export const ui = {
     'articles.read': 'Leer artículo',
     'articles.ptOnly': 'En portugués',
     'articles.back': '← Volver a los artículos',
+    'articles.otherLangs': 'También disponible en',
 
     // Hero
     'hero.tagline': 'Software para pequeñas empresas y sus complejidades únicas',

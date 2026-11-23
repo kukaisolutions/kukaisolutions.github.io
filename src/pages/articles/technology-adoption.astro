@@ -1,0 +1,369 @@
+---
+import ArticleLayout from '@layouts/ArticleLayout.astro';
+import Footnote from '@components/ui/Footnote.astro';
+
+const img = '/articles/adocao-de-tecnologia';
+---
+
+<ArticleLayout id="adocao-de-tecnologia" lang="en" tabTitle="Change and impact in organizations">
+  <p class="disclaimer" slot="disclaimer">
+    This article was written entirely by Rafael Monteiro. Grammar corrections, typo fixes and fact-checking of
+    quotations were done with the help of a language model (Claude). The translation from the original Portuguese was
+    also done with the help of a language model (Claude).
+  </p>
+
+  <aside class="callout">
+    <p class="callout-title">Introduction</p>
+    <p>
+      There is a paradox in how companies adopt technology. Ask any manager whether they would like to improve their
+      company's customer service metrics using AI; the answer will certainly be yes. Now ask how many of those same
+      people would like to be served by a robot when they have a personal problem with their phone or their home
+      internet. Usually, few: most prefer to talk to a human.
+    </p>
+  </aside>
+
+  <p>
+    There has been a lot of discussion about adopting technology in the workplace. There is a constant buzz around
+    artificial intelligence (AI) and how it is going to revolutionize the way we work. A phrase heard again and again in
+    the most varied circles (the media, management, C-level meetings, etc.) is that if you are not adopting some new
+    technology or putting some AI agent to work on something in your company, then you are already behind.
+  </p>
+
+  <p>
+    There is a clear risk in the idea that technology — AI in particular — applies uniformly and with obvious benefits
+    to every area; in fact, it does not. AI is certainly the <em>hype</em> of the moment and will bring many changes to
+    the way we work. But it does not apply directly to much of what we already do. What we can say, especially for
+    fields where human interaction is the core (such as <strong>Occupational Therapy</strong>,
+    <strong>Psychology</strong>, among others), is the following:
+  </p>
+
+  <ol>
+    <li><em>Your business will probably keep running without adopting some of these technologies.</em></li>
+    <li><em>It is even possible that introducing some of them will lower the quality of the service you offer.</em></li>
+  </ol>
+
+  <p>
+    Curiously, and even in contrast with these two points, it is also likely that some technology is the solution you
+    need to stop having so many problems in your company, problems that often have nothing to do with the professional's
+    competence:
+  </p>
+
+  <ul>
+    <li>Lack of transparency in spending and costs;</li>
+    <li>Disorganized folders and reports;</li>
+    <li>Irregular, non-standardized documents and processes;</li>
+  </ul>
+
+  <p>
+    among many other issues, small or large. In general, management and operational problems are abundant in small
+    businesses. Fortunately, many software products already on the market can be of great help.
+  </p>
+
+  <p>
+    This text was inspired by the work in <em>Hertzum (2022)</em>. My focus, however, is different: its ideas will be
+    adapted to the context of small businesses where <strong>human-to-human</strong> interaction is the soul of the
+    business. At several points I will be intentionally imprecise: I will use software and tool as synonyms, even though
+    the latter term is broader. Adapt the reading to whatever context makes the most sense for you.
+  </p>
+
+  <h2>1. A diagram of impact in companies</h2>
+
+  <p>
+    When we look at the functional structure of a company, we find a good interpretation for the word
+    <strong>impact</strong>: it can be understood as the propagation of an action from one area (or function) to another
+    (or others), as shown in figure 1.
+  </p>
+
+  <figure>
+    <img src={`${img}/figura-1-impacto-en.png`} alt="Flow of impact in organizations" width="470" height="340" />
+    <figcaption>
+      <b>Figure 1.</b> Flow of impact in an organization. "Structure and team organization" denotes norms, teamwork,
+      division of labor and structural hierarchies that dictate how work flows in a company. This diagram was taken from
+      Hertzum (2022), figure 2.1.
+    </figcaption>
+  </figure>
+
+  <p>We can illustrate the concept with a few examples:</p>
+
+  <ol>
+    <li>
+      <em>"An employee left the company; I hired someone else who does exactly the same thing"</em>. There is no impact
+      here at all, since the new employee's work did not change the tasks being performed in any way, did not involve
+      adopting any new technology, and did not even change the way the group works.
+    </li>
+    <li>
+      <em>"I hired a new manager, who restructured our whole team to meet changes in our customer profile"</em>: this is
+      a clear example of impact, where a person is changing a hierarchical structure and workflow.
+    </li>
+    <li>
+      <em>"We adopted new software that speeds up our work and shortens the time between request and delivery"</em>:
+      this is a classic example of technology adoption impacting the way processes are carried out.
+    </li>
+    <li>
+      <em>"I swapped company A's software for an identical, cheaper one from company B"</em>: there will be no direct
+      impact on the company's operations, although the change opens room for secondary impacts (more cash on hand may
+      mean more budget to hire other people, for example).
+    </li>
+  </ol>
+
+  <p>
+    When we think about a profession whose focus is <strong>human-to-human</strong> interaction, the possibilities for
+    adopting technology are generally limited to changing processes and operations (case 3 above). So, <em>when you
+    evaluate adopting a new technology, take into account where you want changes and improvements in your
+    operations.</em>
+  </p>
+
+  <h2>2. The journey of implementing a new technology</h2>
+
+  <p>
+    Let us make an important distinction right from the start: <em>buying a technology is not the same as adopting
+    it</em>;<Footnote n={1}>I understand "adopting" a technology or resource as "using" it.</Footnote> there is an
+    enormous distance between the two.
+  </p>
+
+  <figure>
+    <img src={`${img}/figura-2-linha-do-tempo-en.png`} alt="Timeline of technology adoption" width="798" height="117" />
+    <figcaption>
+      <b>Figure 2.</b> Timeline of technology adoption. In general, most failures are concentrated in the period before
+      benefits are reaped, and they happen for countless reasons, often unrelated to the tools being tested. "Go live"
+      is the moment a technology is made available for employees to use. This image was inspired by chapters 1 and 2 of
+      Hertzum (2022).
+    </figcaption>
+  </figure>
+
+  <p>
+    Integrating a piece of software or a tool into the company's processes can take a long time, or may never happen at
+    all. This adaptation period<Footnote n={2}>This is what is called the <em>shakedown</em> period; cf. Hertzum (2022),
+    ch. 1.</Footnote> is also a testing period, in which the pros and cons of adopting it are investigated.<Footnote
+    n={3}>Note that this period may or may not coincide with the period in which the tool is purchased. That is because
+    the adoption of a tool often happens in layers — management vs. users — where the former often have perspectives
+    quite different from those of the people who will use the tool day to day. In fact, managers and those who purchase
+    tools generally tend to look at the process through the lens of "macro"-benefits, while end users tend to weigh
+    "micro"-benefits through the lens of extra work, redundancy, adaptation, etc. Clearly, effort and benefit are
+    unevenly distributed across a company's hierarchy. I stress that the cases that interest me most are those in which
+    purchasing decisions are made by the people who will use the tool — as is the case in many psychology and
+    occupational therapy clinics.</Footnote> After this period the company starts operating in a stable way, with the
+    new technology absorbed by its teams and adapted to its processes and operations. However, there are risks along the
+    way, which I discuss next.
+  </p>
+
+  <h3>2.1. The adaptation period and the risk of failed adoption</h3>
+
+  <p>
+    The period of adapting to a tool is one of the hardest. During it, <strong>conflicts and tensions</strong> tend to
+    emerge. <em>Remember, however: this is expected, since both are the raw material of any change whatsoever.</em> It
+    is generally in this phase that the adoption of a tool tends to fail, because the risks are many:
+  </p>
+
+  <ul>
+    <li>
+      Rejection and/or refusal<Footnote n={4}>There is an interesting example of refusal to use a technology in the book
+      <em>Creativity, Inc.</em>, by <em>Edwin Catmull</em> and <em>Amy Wallace</em>, which tells the story of Pixar, the
+      animation company. In it, Catmull recounts the company's early days, when it was still a division of Lucasfilm
+      (which produced the classic "Star Wars" saga). His team had invented a technology for digital film editing that
+      replaced the hand-crafted technique of handling film reels and "cutting and splicing by hand" that film editors
+      used. To make a long story short: the editors simply refused to use the software Catmull's team had created, which
+      resulted in an enormous failure.</Footnote>;
+    </li>
+    <li>Discontinued use;</li>
+    <li>Partial adoption.</li>
+  </ul>
+
+  <p>
+    In my view, the last two are the worst cases, because they may indicate that the software was, from the beginning,
+    incapable of or insufficient for meeting the company's needs. The same outcomes may also point to inconvenience,
+    difficulty of use, or even a lack of adequate training for using it fully.
+  </p>
+
+  <p>
+    The path that leads to any of these outcomes goes through a complex cost-benefit assessment made by the end users.
+    Broadly speaking, we can split cost-benefit into factors that promote the adoption of a technology and factors that
+    obstruct it.
+  </p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Promoting factors</th><th>Obstructing factors</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Speed</td><td>Poor fit with the task</td></tr>
+        <tr><td>Reliability</td><td>Lack of support (such as inaccessible IT or no manual)</td></tr>
+        <tr><td>Ease of use</td><td>Lack of urgency</td></tr>
+        <tr><td>Accuracy of the tool</td><td>Change fatigue</td></tr>
+        <tr><td>Flexibility</td><td>Lack of participation or engagement from the end-user team</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>There are three aspects that I see often and that appear in the table above:</p>
+
+  <ul>
+    <li>
+      <em>Lack of urgency</em>: it is not unusual to hear from companies that adopting technology or a new tool is not a
+      priority at the moment. In general, these are companies that suffer from some or many of the following operational
+      and structural problems:
+      <ul>
+        <li><strong>Lack of transparency in spending</strong>;</li>
+        <li>
+          <strong>Lack of transparency in earnings</strong> (e.g.: <em>"I don't know how much I earned this
+          month"</em>);
+        </li>
+        <li>
+          <strong>Lack of internal organization</strong> (e.g.: <em>"I don't know which folder I saved the patient's
+          record in"</em>);
+        </li>
+        <li>
+          <strong>Lack of systematized processes</strong> (e.g.: <em>"my employee went on vacation and forgot to write
+          the session report, so I couldn't send it to the health insurer on time"</em>, or <em>"my employee needs to
+          send me the picture that's on her phone, but she isn't answering her phone right now"</em>);
+        </li>
+        <li>
+          <strong>Lack of flexibility</strong> (e.g.: <em>"I'm going to travel, but I'll have to take my laptop and my
+          notebooks to see my patients"</em>);
+        </li>
+        <li>
+          <strong>Lack of security protocols</strong> (e.g.: <em>"I keep all my session notes in this notebook, which I
+          lost last week"</em>).
+        </li>
+      </ul>
+      <p>
+        It is very common, especially among administrators or managers of small clinics, to perceive a disconnect
+        between the problems that prevail in the company and the tools that can be used to mitigate them. This is
+        expected, since most of these professionals have little or no training in management, which keeps them from
+        seeing the relationships between an organization's structures, as shown in figure 1; in this case, they tend to
+        see changes as isolated effects, with no impact at all on tasks or on organizational or process structures, and
+        therefore ineffective.
+      </p>
+    </li>
+    <li>
+      <em>Change fatigue</em>: this is the product of very dynamic or unstable environments, where managers are always
+      looking for a silver bullet to boost the company's productivity. In these cases, the end-user team is always
+      testing various tools — usually ineffective ones — to deal with the problems they face day to day. When this
+      happens, every new tool adoption becomes just one more among many, which reduces its effectiveness and worsens the
+      team's lack of engagement.
+    </li>
+    <li>
+      <em>Lack of participation or engagement from the end-user team</em>: it is very common for communication to break
+      down between the party that develops a piece of software and the party that uses it. Many companies run the risk
+      of implementing technologies that, for lack of communication with the end users, fail to meet day-to-day needs.
+      This is a devastating scenario, in which the company bears an unnecessary cost, developers are left in the dark
+      (because they receive no feedback on possible improvements), and users end up operating with suboptimal tools.
+    </li>
+  </ul>
+
+  <p>
+    Of the three, I find the third terrible, although I feel the first is the worst. <em>Kotter (2008)</em> argues that
+    there are two possible manifestations of the absence of a sense of urgency:
+  </p>
+
+  <ul>
+    <li>complacency;</li>
+    <li>false urgency.</li>
+  </ul>
+
+  <p>
+    The complacent professional holds the misleading belief that there is no problem in leaving things as they are,
+    since "it has always been this way". False urgency, on the other hand, stems from anxiety to "put the house in
+    order", leading to activities and tasks that produce no results. In my view, this also comes from a huge insecurity
+    in the face of more serious changes and of the need to rethink the workflow in depth, producing a defensive reaction
+    to preserve the <em>status quo</em>. Both, when prevalent, are a very bad sign that it will be hard to get through
+    the adaptation phase and reach the point of reaping rewards at the end of implementing the new system.
+  </p>
+
+  <h2>3. How to measure the impact of a new tool on your operations</h2>
+
+  <p>
+    You can be quantitative here and assess how much (in delivery time, or in costs) a change in one area impacted
+    another. Since I imagine this is not very natural for many people, I suggest another path.
+  </p>
+
+  <p>
+    One possible approach is to consider qualitatively what kind of gains you are aiming for with the new tool, such as:
+  </p>
+
+  <ul>
+    <li>Better standardization: documents with a more clearly defined structure;</li>
+    <li>
+      Flexibility and security in the custody of patient data: in the cloud, encrypted, accessible only by
+      administrators or by people they have granted access to;
+    </li>
+    <li>Structural organization: data is stored following a fixed logic, not subject to human inconsistencies;</li>
+    <li>Transparency in costs and earnings: simple, practical bookkeeping;</li>
+    <li>Gains in speed: for example, AI transcription can make writing reports faster;</li>
+  </ul>
+
+  <p>
+    etc. If you lack any of these "virtues" and suffer from not having them, a piece of software that offers them may be
+    useful to you.
+  </p>
+
+  <h2>4. Conclusion — so, should I adopt a new technology?</h2>
+
+  <p>Let us start with the easiest cases.</p>
+
+  <h3>4.1. Some extreme cases — <strong>no!</strong></h3>
+
+  <p>
+    I believe that in the following two cases adopting any software — including Kukai Solutions' own! — is problematic:
+  </p>
+
+  <ul>
+    <li>
+      <strong>Extremely "efficient" companies</strong>: these are companies that, even without up-to-date tools, manage
+      to operate with a high degree of efficiency and a fully booked schedule. In general, in these cases there is not
+      much room in the schedule to rethink the workflow.<Footnote n={5}>Let me be a little more careful here and
+      contrast this with the following observation. There is a great line in the book <em>The Goal: A Process of Ongoing
+      Improvement</em>, by Eliyahu Goldratt, which says that <em>"a plant in which everyone is working all the time is
+      very inefficient"</em>. Broadly speaking, the argument is that if there is no room to deal with fluctuations in
+      operations, there will never be the flexibility to meet new demands, and the company can no longer offer new
+      services or serve new customers.</Footnote>
+    </li>
+    <li>
+      <strong>Extremely inefficient companies</strong>: in this case, especially if there is some gap in professional
+      training, a tool is unlikely to make up for it.
+    </li>
+  </ul>
+
+  <p>
+    In these cases, at least until other issues are resolved (freeing up room in the schedule or mitigating shortcomings
+    in other areas), <strong>I recommend not adopting any technology at all</strong>.
+  </p>
+
+  <h3>4.2. Other cases — <strong>probably yes, but think it through</strong></h3>
+
+  <p>
+    As I said earlier, in section 3, if you can anticipate improvements in operations, elimination of tasks or gains in
+    efficiency, assess:
+  </p>
+
+  <ul>
+    <li>how much time I gained/saved with the change;</li>
+    <li>how much organization I gained with the change;</li>
+    <li>how much flexibility I gained with the change;</li>
+    <li>how much security (of patient information) I gained with the change;</li>
+  </ul>
+
+  <p>
+    etc. The biggest difficulty in measuring all this is that these are different quantities (money, time,
+    "organization", etc.). <strong>You can try to put them into a single unit by using the value of your working hour as
+    a reference</strong>, which helps estimate how much this improvement would bring you, and also lets you judge
+    whether the tool is worth its cost.
+  </p>
+
+  <hr />
+
+  <h3>References</h3>
+
+  <ul class="references">
+    <li>Catmull, Edwin, and Amy Wallace. <em>Creativity, Inc.</em> Random House, Incorporated, 2014.</li>
+    <li>
+      Goldratt, Eliyahu, and Jeff Cox. <em>The Goal: A Process of Ongoing Improvement</em>. North River Press, 1984.
+    </li>
+    <li>
+      Hertzum, Morten. <em>Organizational implementation: the design in use of information systems</em>. Springer
+      Nature, 2022.
+    </li>
+    <li>Kotter, John P. <em>A sense of urgency</em>. Harvard Business Press, 2008.</li>
+  </ul>
+</ArticleLayout>

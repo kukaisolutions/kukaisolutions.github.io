@@ -1,10 +1,16 @@
 import type { Lang } from '../i18n/ui';
 
-export interface Article {
+export interface ArticleVersion {
   slug: string;
-  /** Language the article is written in. */
-  lang: Lang;
   title: string;
+}
+
+export interface Article {
+  id: string;
+  /** Language the article was originally written in. */
+  original: Lang;
+  /** The languages the article is available in, original included. */
+  versions: Partial<Record<Lang, ArticleVersion>>;
   author: string;
   date: Record<Lang, string>;
   summary: Record<Lang, string>;
@@ -12,10 +18,25 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    slug: 'adocao-de-tecnologia',
-    lang: 'pt',
-    title:
-      'Sobre mudança e impacto em organizações, especialmente em decorrência da adoção de novas tecnologias e ferramentas',
+    id: 'adocao-de-tecnologia',
+    original: 'pt',
+    versions: {
+      pt: {
+        slug: 'adocao-de-tecnologia',
+        title:
+          'Sobre mudança e impacto em organizações, especialmente em decorrência da adoção de novas tecnologias e ferramentas',
+      },
+      en: {
+        slug: 'technology-adoption',
+        title:
+          'On change and impact in organizations, especially as a result of adopting new technologies and tools',
+      },
+      es: {
+        slug: 'adopcion-de-tecnologia',
+        title:
+          'Sobre el cambio y el impacto en las organizaciones, especialmente a raíz de la adopción de nuevas tecnologías y herramientas',
+      },
+    },
     author: 'Rafael Monteiro',
     date: {
       en: 'November 2026',
@@ -30,6 +51,23 @@ export const articles: Article[] = [
   },
 ];
 
-export function articleHref(article: Article): string {
-  return `/${article.lang}/articles/${article.slug}/`;
+export function getArticle(id: string): Article {
+  const article = articles.find((a) => a.id === id);
+  if (!article) throw new Error(`Unknown article: ${id}`);
+  return article;
+}
+
+/** The language the article is shown in for a reader of `lang`: theirs if translated, else the original. */
+export function articleLang(article: Article, lang: Lang): Lang {
+  return article.versions[lang] ? lang : article.original;
+}
+
+export function articleVersion(article: Article, lang: Lang): ArticleVersion {
+  return article.versions[articleLang(article, lang)]!;
+}
+
+export function articleHref(article: Article, lang: Lang): string {
+  const shown = articleLang(article, lang);
+  const prefix = shown === 'en' ? '' : `/${shown}`;
+  return `${prefix}/articles/${article.versions[shown]!.slug}/`;
 }

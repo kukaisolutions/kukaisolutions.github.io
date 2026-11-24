@@ -1,0 +1,62 @@
+---
+// Index of the Beiwe help articles in one language: /products/beiwe/<lang>/.
+import Layout from '@layouts/Layout.astro';
+import BackToTop from '@components/ui/BackToTop.astro';
+import { useTranslations } from '@i18n/ui';
+import type { Lang } from '@i18n/ui';
+import { helpEntries, helpHref, helpLangs, helpSummary } from '../../../../data/beiweHelp';
+
+export function getStaticPaths() {
+  return helpLangs.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const entries = await helpEntries(lang);
+const groups = [
+  { title: t('help.setup'), items: entries.filter((e) => e.data.group === 'setup') },
+  { title: t('help.account'), items: entries.filter((e) => e.data.group === 'account') },
+];
+const productsHref = lang === 'en' ? '/products/' : `/${lang}/products/`;
+---
+
+<Layout lang={lang} title={`${t('help.title')} | Kukai Solutions`} description={t('help.intro')}>
+  <main class="px-4">
+    <div class="mb-4">
+      <a
+        href={productsHref}
+        class="text-sm text-black dark:text-white opacity-50 hover:opacity-100 hover:text-orange transition-colors"
+      >
+        ← Beiwe
+      </a>
+    </div>
+
+    <section class="mx-auto max-w-3xl py-10 text-black dark:text-white">
+      <h1 class="font-monospace text-2xl font-bold tracking-wide text-orange lg:text-4xl">{t('help.title')}</h1>
+      <span class="mb-6 mt-2 block h-1 w-10 bg-orange"></span>
+      <p class="mb-10 opacity-80">{t('help.intro')}</p>
+
+      {
+        groups.map((group) => (
+          <div class="mb-10">
+            <h2 class="mb-4 text-lg font-bold text-orange">{group.title}</h2>
+            <ol class="space-y-4">
+              {group.items.map((entry) => (
+                <li>
+                  <a
+                    href={helpHref(entry)}
+                    class="group block rounded-lg border border-gray-200 bg-white/60 p-5 transition-colors hover:border-orange dark:border-gray-700 dark:bg-black/40 dark:hover:border-orange"
+                  >
+                    <h3 class="mb-1 font-semibold leading-snug group-hover:text-orange">{entry.data.title}</h3>
+                    <p class="text-sm leading-relaxed opacity-75">{helpSummary(entry, 160)}</p>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </div>
+        ))
+      }
+    </section>
+  </main>
+  <BackToTop />
+</Layout>

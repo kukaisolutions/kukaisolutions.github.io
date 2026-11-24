@@ -1,0 +1,73 @@
+---
+// One Beiwe help article: /products/beiwe/<lang>/<slug>/, from
+// src/content/beiwe-help/<lang>/<slug>.md.
+import { getCollection } from 'astro:content';
+import Layout from '@layouts/Layout.astro';
+import BackToTop from '@components/ui/BackToTop.astro';
+import { languages, useTranslations } from '@i18n/ui';
+import type { Lang } from '@i18n/ui';
+import {
+  helpHref,
+  helpIndexHref,
+  helpSummary,
+  helpTranslations,
+  splitHelpSlug,
+  type HelpEntry,
+} from '../../../../data/beiweHelp';
+import '../../../../styles/article.css';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('beiwe-help');
+  return entries.map((entry) => {
+    const [lang, slug] = splitHelpSlug(entry);
+    return { params: { lang, slug }, props: { entry } };
+  });
+}
+
+interface Props {
+  entry: HelpEntry;
+}
+
+const { entry } = Astro.props;
+const [lang] = splitHelpSlug(entry) as [Lang, string];
+const t = useTranslations(lang);
+const { Content } = await entry.render();
+const translations = await helpTranslations(entry);
+const others = (Object.keys(languages) as Lang[]).filter((l) => translations[l]);
+---
+
+<Layout lang={lang} title={`${entry.data.title} | Beiwe`} description={helpSummary(entry)}>
+  <main class="px-4">
+    <div class="mb-4">
+      <a
+        href={helpIndexHref(lang)}
+        class="text-sm text-black dark:text-white opacity-50 hover:opacity-100 hover:text-orange transition-colors"
+      >
+        {t('help.back')}
+      </a>
+    </div>
+
+    <article class="article markdown mx-auto max-w-3xl py-10">
+      <header class="mb-10">
+        <h1 class="font-monospace text-2xl font-bold leading-tight text-orange lg:text-4xl">{entry.data.title}</h1>
+        <span class="mb-4 mt-4 block h-1 w-10 bg-orange"></span>
+        {
+          others.length > 0 && (
+            <p class="text-sm opacity-70">
+              {t('articles.otherLangs')}:{' '}
+              {others.map((l, i) => (
+                <>
+                  {i > 0 && ' · '}
+                  <a href={helpHref(translations[l]!)} lang={l} hreflang={l}>{languages[l]}</a>
+                </>
+              ))}
+            </p>
+          )
+        }
+      </header>
+
+      <Content />
+    </article>
+  </main>
+  <BackToTop />
+</Layout>

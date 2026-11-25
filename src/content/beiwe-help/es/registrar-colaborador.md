@@ -26,7 +26,7 @@ Si la cuenta todavía no existe, Beiwe avisa: "O usuário não teve seu email re
    - **Correo electrónico**: el mismo con el que la persona creó la cuenta. No se puede cambiar después;
    - **Teléfono** (*Telefone*), **Nombre del consejo regional** (*Nome do conselho regional*, por ejemplo CREFITO) y **Número en el consejo** (*Número no conselho*), si corresponde;
    - **Firma en informes** (*Assinatura em relatórios*): el texto que va al final de los informes que escriba la persona;
-   - **Acceso a herramientas de IA** (*Acesso a ferramentas de IA*), si la persona puede usar la transcripción por IA.
+   - **Acceso a herramientas de IA** (*Acesso a ferramentas de IA*), si la persona puede usar la transcripción por IA (vea [Cómo hacer informes con transcripción de voz por IA](/products/beiwe/es/informe-con-transcripcion-por-ia/)).
 3. Si quiere, registre las **certificaciones** de la persona (nombre, observaciones, fechas de emisión y vencimiento) y haga clic en **Agregar Certificación**.
 4. Haga clic en **Registrar Colaborador**.
 
@@ -47,7 +47,9 @@ Los cambios se aplican en menos de un minuto. La tabla completa de lo que ve cad
 
 ## Editar después
 
-En **Editar Colaborador**, elija a la persona para cambiar el nombre, el teléfono, el consejo, la firma y las certificaciones.
+En **Editar Colaborador**, elija a la persona para cambiar el nombre, el teléfono, el consejo, la firma y las certificaciones. Aquí también el administrador completa su propio registro en el primer acceso, cambiando el nombre provisional "ADMIN" por su nombre.
+
+🎬 Video: [Primer acceso y registro de administradores](https://www.youtube.com/watch?v=dHRN0TTfIHQ) (en portugués)
 
 Siguiente paso: [Cómo registrar a un paciente y sus precios](/products/beiwe/es/registrar-paciente-y-precios/) · Volver a [Primeros pasos](/products/beiwe/es/primeros-pasos/)
 

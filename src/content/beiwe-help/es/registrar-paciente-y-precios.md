@@ -35,7 +35,21 @@ Los precios están en **Finanzas**, en **🪙 Valores practicados** (*Valores Pr
 2. indique el nuevo **Precio** (*Preço*) y la **Fecha de vigencia** (*Data de vigência*);
 3. haga clic en **Agregar precio** (*Adicionar preço*).
 
-El precio anterior no se borra: Beiwe guarda el historial. Cuando una cita pasa a un estado facturable, recibe el precio vigente en la fecha de la cita, y ese monto queda registrado. Así, un reajuste no cambia el valor de las citas ya cobradas. Si el precio de un servicio no está registrado, la cita aparece sin precio en Finanzas. La **Tabla de valores por paciente** (*Tabela de Valores por Paciente*) muestra todos los precios registrados.
+El precio anterior no se borra: Beiwe guarda el historial. Cuando una cita pasa a un estado facturable, recibe el precio vigente en la fecha de la cita, y ese monto queda registrado. Cambiar el estado a otro estado facturable o reprogramar la cita no cambia ese monto. La **Tabla de valores por paciente** (*Tabela de Valores por Paciente*) muestra todos los precios registrados.
+
+### Un precio con fecha de vigencia en el pasado
+
+Si el nuevo precio vale desde una fecha en la que ya hay citas cobradas, Beiwe trata cada caso así:
+
+- **Citas cobradas sin precio** (que aparecen como **Sin precio** (*Sem preço*) en Finanzas) reciben el nuevo precio en el momento.
+- **Citas todavía sin pago**, cobradas con otro precio: Beiwe muestra una lista con el precio cobrado y el nuevo precio. Marque las que deben cambiar y haga clic en **Aplicar el nuevo precio a las marcadas** (*Aplicar o novo preço às marcadas*), o en **Mantener los precios actuales** (*Manter os preços atuais*).
+- **Citas con algún pago registrado**, total o parcial: mantienen el precio cobrado. La lista las muestra para que usted lo sepa; si hay una diferencia que ajustar, regístrela aparte.
+
+Por ejemplo: el precio era R$ 200 y, el 20 de noviembre, usted registra R$ 300 con vigencia desde el 1 de octubre. Una cita del 1 de noviembre todavía sin pago aparece en la lista y pasa a R$ 300 si la marca. Si ya tiene un pago, sigue en R$ 200.
+
+### Citas canceladas después de un pago
+
+Si una cita cobrada pasa a un estado sin cobro (por ejemplo, Cancelado) y ya tiene un pago registrado, sigue en Finanzas como **Sin cobro (con pago)** (*Sem cobrança (com pagamento)*), para que el pago no se pierda. Sin pago, sale de Finanzas.
 
 ## Editar el registro
 

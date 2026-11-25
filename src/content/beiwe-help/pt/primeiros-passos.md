@@ -30,9 +30,13 @@ Este guia mostra o que configurar antes de começar a usar a Beiwe no dia a dia 
 
 Os serviços vêm antes dos pacientes porque o preço de cada paciente é definido por serviço.
 
-## Complete o seu próprio cadastro
+Depois, a equipe já pode escrever os relatórios nos prontuários, inclusive ditando-os: veja [Como fazer relatórios usando transcrição de voz por IA](/products/beiwe/pt/relatorio-com-transcricao-por-ia/).
 
-Quando a conta da clínica é criada, o administrador aparece como colaborador com um nome provisório. A página **Início** mostra um aviso com o link para completar o seu nome e cargo em **Cadastro → Colaboradores**.
+## Comece pelo seu próprio cadastro
+
+Quando a conta da clínica é criada, o administrador aparece como colaborador com o nome provisório "ADMIN". No primeiro acesso, a página **Início** mostra um aviso com o link para completar o seu nome, cargo e demais dados em **Cadastro → Colaboradores**.
+
+🎬 Vídeo: [Primeiro acesso e cadastro de administradores](https://www.youtube.com/watch?v=dHRN0TTfIHQ)
 
 ## A página Início avisa o que falta
 

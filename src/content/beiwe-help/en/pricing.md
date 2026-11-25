@@ -1,7 +1,7 @@
 ---
 title: "Beiwe pricing"
 key: precos
-order: 8
+order: 9
 group: account
 description: "What Beiwe costs: price per seat, AI transcription, the trial period and how payment works."
 ---
@@ -33,7 +33,7 @@ A clinic with 1 administrator, 3 collaborators and 10 guardians with access to t
 
 ## AI transcription
 
-Voice transcription turns the professional's dictation into text, already split into the report's sections.
+Voice transcription turns the professional's dictation into text, already split into the report's sections. See [How to write reports with AI voice transcription](/products/beiwe/en/report-with-ai-transcription/).
 
 - **120 minutes per month included** for the clinic, at no extra cost.
 - Beyond that: **R$ 0.08 per minute**, charged for the exact time used (2.4 minutes cost 2.4 minutes, with no rounding up).

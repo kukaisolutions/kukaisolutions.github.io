@@ -41,6 +41,7 @@ Para agendar una serie de citas de una vez, abra **🔁 Agendar citas periódica
 Cuando la atención ocurra, abra la cita en la Agenda, en **Editar evento** (*Editar evento*), y cambie el estado a **Realizado** (u otro estado facturable). A partir de ahí cuenta como monto por cobrar en **Finanzas**, y el informe de la cita se puede escribir en los Expedientes.
 
 - 🎬 [Cómo finalizar una cita y escribir un informe](https://www.youtube.com/watch?v=Vo3AN5XL-dg) (en portugués)
+- 🎬 [Cómo hacer informes con transcripción de voz por IA](https://www.youtube.com/watch?v=fFzwQqI4u0U) (en portugués; guía: [Cómo hacer informes con transcripción de voz por IA](/products/beiwe/es/informe-con-transcripcion-por-ia/))
 - 🎬 [El flujo de caja visto desde la plataforma](https://www.youtube.com/watch?v=R_wjvddsbJM) (en portugués)
 
 Volver a [Primeros pasos](/products/beiwe/es/primeros-pasos/)

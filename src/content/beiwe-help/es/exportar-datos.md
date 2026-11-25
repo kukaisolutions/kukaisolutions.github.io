@@ -1,7 +1,7 @@
 ---
 title: "Cómo exportar los datos de su clínica desde Beiwe"
 key: exportar-dados
-order: 9
+order: 10
 group: account
 ---
 

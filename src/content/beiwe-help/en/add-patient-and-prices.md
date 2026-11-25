@@ -35,7 +35,21 @@ Prices are kept in **Finance**, under **🪙 Prices charged** (*Valores Praticad
 2. enter the new **Price** (*Preço*) and the **Effective date** (*Data de vigência*);
 3. click **Add price** (*Adicionar preço*).
 
-The previous price isn't deleted: Beiwe keeps the history. When an appointment moves to a billable status, it gets the price that applied on the appointment date, and that amount is recorded. So a price change doesn't alter appointments that were already charged. If a service's price isn't registered, the appointment shows up without a price in Finance. The **Patient price table** (*Tabela de Valores por Paciente*) shows all registered prices.
+The previous price isn't deleted: Beiwe keeps the history. When an appointment moves to a billable status, it gets the price that applied on the appointment date, and that amount is recorded. Changing the status to another billable status, or rescheduling the appointment, doesn't change that amount. The **Patient price table** (*Tabela de Valores por Paciente*) shows all registered prices.
+
+### A price with an effective date in the past
+
+If the new price applies from a date on which there are already charged appointments, Beiwe handles each case like this:
+
+- **Charged appointments without a price** (shown as **No price** (*Sem preço*) in Finance) get the new price right away.
+- **Appointments not yet paid**, charged at another price: Beiwe shows a list with the charged price and the new price. Tick the ones that should change and click **Apply the new price to the ticked ones** (*Aplicar o novo preço às marcadas*), or **Keep the current prices** (*Manter os preços atuais*).
+- **Appointments with a payment recorded**, in full or in part, keep the charged price. The list shows them so you know about them; if there is a difference to settle, record it separately.
+
+For example: the price was R$ 200 and, on November 20, you register R$ 300 effective from October 1. An appointment on November 1 that hasn't been paid yet appears in the list and moves to R$ 300 if you tick it. If it already has a payment, it stays at R$ 200.
+
+### Appointments cancelled after a payment
+
+If a charged appointment moves to a non-billable status (for example, Cancelled) and already has a payment recorded, it stays in Finance as **Not billable (with payment)** (*Sem cobrança (com pagamento)*), so the payment isn't lost. Without a payment, it leaves Finance.
 
 ## Editing the registration
 

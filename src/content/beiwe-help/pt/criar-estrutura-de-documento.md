@@ -39,7 +39,7 @@ O documento aparece em **Tipos de Documentos e Seções Cadastrados**, e a equip
 
 ## E para escrever o relatório?
 
-Veja o vídeo [Como finalizar uma consulta e escrever um relatório](https://www.youtube.com/watch?v=Vo3AN5XL-dg).
+Veja o vídeo [Como finalizar uma consulta e escrever um relatório](https://www.youtube.com/watch?v=Vo3AN5XL-dg). Para ditar o relatório em vez de digitá-lo, veja [Como fazer relatórios usando transcrição de voz por IA](/products/beiwe/pt/relatorio-com-transcricao-por-ia/).
 
 Próximo passo: [Como cadastrar um serviço e os seus status](/products/beiwe/pt/cadastrar-servico-e-status/) · Voltar para [Primeiros passos](/products/beiwe/pt/primeiros-passos/)
 

@@ -26,7 +26,7 @@ If the account doesn't exist yet, Beiwe warns you: "O usuário não teve seu ema
    - **Email**: the same one the person used to create their account. It can't be changed later;
    - **Phone** (*Telefone*), **Regional council name** (*Nome do conselho regional*, for example CREFITO) and **Council number** (*Número no conselho*), if any;
    - **Signature on reports** (*Assinatura em relatórios*): the text that goes at the end of the reports this person writes;
-   - **Access to AI tools** (*Acesso a ferramentas de IA*), if the person may use AI transcription.
+   - **Access to AI tools** (*Acesso a ferramentas de IA*), if the person may use AI transcription (see [How to write reports with AI voice transcription](/products/beiwe/en/report-with-ai-transcription/)).
 3. If you want, record the person's **certifications** (name, notes, issue and expiry dates) and click **Add Certification**.
 4. Click **Register Collaborator**.
 
@@ -47,7 +47,9 @@ Changes take effect within a minute. The full table of what each profile sees is
 
 ## Editing later
 
-Under **Edit Collaborator**, choose the person to change their name, phone, council, signature and certifications.
+Under **Edit Collaborator**, choose the person to change their name, phone, council, signature and certifications. This is also where the administrator completes their own profile on the first sign-in, replacing the temporary name "ADMIN" with their own name.
+
+🎬 Video: [First sign-in and registering administrators](https://www.youtube.com/watch?v=dHRN0TTfIHQ) (in Portuguese)
 
 Next step: [How to register a patient and their prices](/products/beiwe/en/add-patient-and-prices/) · Back to [Getting started](/products/beiwe/en/getting-started/)
 

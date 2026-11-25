@@ -41,6 +41,7 @@ To book a series of appointments at once, open **🔁 Schedule recurring appoint
 When the session has taken place, open the appointment in the Schedule, under **Edit event** (*Editar evento*), and change the status to the completed one (or another billable status). From then on it counts as an amount receivable in **Finance**, and the appointment's report can be written in Patient Records.
 
 - 🎬 [How to finish an appointment and write a report](https://www.youtube.com/watch?v=Vo3AN5XL-dg) (in Portuguese)
+- 🎬 [How to write reports with AI voice transcription](https://www.youtube.com/watch?v=fFzwQqI4u0U) (in Portuguese; guide: [How to write reports with AI voice transcription](/products/beiwe/en/report-with-ai-transcription/))
 - 🎬 [Cash flow as seen from the platform](https://www.youtube.com/watch?v=R_wjvddsbJM) (in Portuguese)
 
 Back to [Getting started](/products/beiwe/en/getting-started/)

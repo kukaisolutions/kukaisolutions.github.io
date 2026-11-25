@@ -1,7 +1,7 @@
 ---
 title: "Preços da Beiwe"
 key: precos
-order: 8
+order: 9
 group: account
 description: "Quanto custa a Beiwe: preço por assento, transcrição por IA, período de teste e como funciona o pagamento."
 ---
@@ -33,7 +33,7 @@ Uma clínica com 1 administrador, 3 colaboradores e 10 responsáveis com acesso 
 
 ## Transcrição por IA
 
-A transcrição por voz transforma o ditado do profissional em texto, já distribuído nas seções do relatório.
+A transcrição por voz transforma o ditado do profissional em texto, já distribuído nas seções do relatório. Veja [Como fazer relatórios usando transcrição de voz por IA](/products/beiwe/pt/relatorio-com-transcricao-por-ia/).
 
 - **120 minutos por mês incluídos** para a clínica, sem custo adicional.
 - Acima disso: **R$ 0,08 por minuto**, cobrado pelo tempo exato usado (2,4 minutos custam 2,4 minutos, sem arredondar para cima).

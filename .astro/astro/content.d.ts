@@ -197,6 +197,13 @@ declare module 'astro:content' {
   collection: "beiwe-help";
   data: InferEntrySchema<"beiwe-help">
 } & { render(): Render[".md"] };
+"en/report-with-ai-transcription.md": {
+	id: "en/report-with-ai-transcription.md";
+  slug: "en/report-with-ai-transcription";
+  body: string;
+  collection: "beiwe-help";
+  data: InferEntrySchema<"beiwe-help">
+} & { render(): Render[".md"] };
 "en/schedule-appointment.md": {
 	id: "en/schedule-appointment.md";
   slug: "en/schedule-appointment";
@@ -221,6 +228,13 @@ declare module 'astro:content' {
 "es/exportar-datos.md": {
 	id: "es/exportar-datos.md";
   slug: "es/exportar-datos";
+  body: string;
+  collection: "beiwe-help";
+  data: InferEntrySchema<"beiwe-help">
+} & { render(): Render[".md"] };
+"es/informe-con-transcripcion-por-ia.md": {
+	id: "es/informe-con-transcripcion-por-ia.md";
+  slug: "es/informe-con-transcripcion-por-ia";
   body: string;
   collection: "beiwe-help";
   data: InferEntrySchema<"beiwe-help">
@@ -326,6 +340,13 @@ declare module 'astro:content' {
 "pt/primeiros-passos.md": {
 	id: "pt/primeiros-passos.md";
   slug: "pt/primeiros-passos";
+  body: string;
+  collection: "beiwe-help";
+  data: InferEntrySchema<"beiwe-help">
+} & { render(): Render[".md"] };
+"pt/relatorio-com-transcricao-por-ia.md": {
+	id: "pt/relatorio-com-transcricao-por-ia.md";
+  slug: "pt/relatorio-com-transcricao-por-ia";
   body: string;
   collection: "beiwe-help";
   data: InferEntrySchema<"beiwe-help">

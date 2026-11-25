@@ -208,7 +208,17 @@ function handleCloseOnClick() {
 <li>informe o novo <strong>Preço</strong> e a <strong>Data de vigência</strong>;</li>
 <li>clique em <strong>Adicionar preço</strong>.</li>
 </ol>
-<p>O preço anterior não é apagado: a Beiwe guarda o histórico. Quando uma consulta passa para um status cobrado, ela recebe o preço que valia na data da consulta, e esse valor fica registrado. Assim, um reajuste não muda o valor de consultas já cobradas. Se o preço de um serviço não estiver cadastrado, a consulta aparece sem preço no Financeiro. A <strong>Tabela de Valores por Paciente</strong> mostra todos os preços cadastrados.</p>
+<p>O preço anterior não é apagado: a Beiwe guarda o histórico. Quando uma consulta passa para um status cobrado, ela recebe o preço que valia na data da consulta, e esse valor fica registrado. Mudar o status para outro status cobrado ou remarcar a consulta não muda esse valor. A <strong>Tabela de Valores por Paciente</strong> mostra todos os preços cadastrados.</p>
+<h3 id="um-preço-com-data-de-vigência-no-passado">Um preço com data de vigência no passado</h3>
+<p>Se o novo preço vale a partir de uma data em que já há consultas cobradas, a Beiwe trata cada caso assim:</p>
+<ul>
+<li><strong>Consultas cobradas sem preço</strong> (que aparecem como <strong>Sem preço</strong> no Financeiro) recebem o novo preço na hora.</li>
+<li><strong>Consultas ainda sem pagamento</strong>, cobradas com outro preço: a Beiwe mostra uma lista com o preço cobrado e o novo preço. Marque as que devem mudar e clique em <strong>Aplicar o novo preço às marcadas</strong>, ou em <strong>Manter os preços atuais</strong>.</li>
+<li><strong>Consultas com algum pagamento registrado</strong>, total ou parcial: mantêm o preço cobrado. A lista mostra essas consultas para você saber; se houver diferença a acertar, registre-a à parte.</li>
+</ul>
+<p>Por exemplo: o preço era R$ 200 e, em 20 de novembro, você cadastra R$ 300 com vigência a partir de 1º de outubro. Uma consulta de 1º de novembro ainda não paga aparece na lista e passa a R$ 300 se você a marcar. Se ela já tiver um pagamento, continua com R$ 200.</p>
+<h3 id="consultas-canceladas-depois-de-um-pagamento">Consultas canceladas depois de um pagamento</h3>
+<p>Se uma consulta cobrada passa para um status sem cobrança (por exemplo, Cancelado) e já tem pagamento registrado, ela continua no Financeiro como <strong>Sem cobrança (com pagamento)</strong>, para o pagamento não se perder. Sem pagamento, ela sai do Financeiro.</p>
 <h2 id="editar-o-cadastro">Editar o cadastro</h2>
 <p>Em <strong>Detalhes do Paciente</strong>, escolha o paciente para ver e editar os dados e os responsáveis.</p>
 <p>Próximo passo: <a href="/products/beiwe/pt/marcar-consulta/">Como marcar uma consulta</a> · Voltar para <a href="/products/beiwe/pt/primeiros-passos/">Primeiros passos</a></p>

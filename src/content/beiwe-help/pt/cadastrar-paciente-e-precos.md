@@ -35,7 +35,21 @@ Os preços ficam no **Financeiro**, em **🪙 Valores Praticados → Cadastro e 
 2. informe o novo **Preço** e a **Data de vigência**;
 3. clique em **Adicionar preço**.
 
-O preço anterior não é apagado: a Beiwe guarda o histórico. Quando uma consulta passa para um status cobrado, ela recebe o preço que valia na data da consulta, e esse valor fica registrado. Assim, um reajuste não muda o valor de consultas já cobradas. Se o preço de um serviço não estiver cadastrado, a consulta aparece sem preço no Financeiro. A **Tabela de Valores por Paciente** mostra todos os preços cadastrados.
+O preço anterior não é apagado: a Beiwe guarda o histórico. Quando uma consulta passa para um status cobrado, ela recebe o preço que valia na data da consulta, e esse valor fica registrado. Mudar o status para outro status cobrado ou remarcar a consulta não muda esse valor. A **Tabela de Valores por Paciente** mostra todos os preços cadastrados.
+
+### Um preço com data de vigência no passado
+
+Se o novo preço vale a partir de uma data em que já há consultas cobradas, a Beiwe trata cada caso assim:
+
+- **Consultas cobradas sem preço** (que aparecem como **Sem preço** no Financeiro) recebem o novo preço na hora.
+- **Consultas ainda sem pagamento**, cobradas com outro preço: a Beiwe mostra uma lista com o preço cobrado e o novo preço. Marque as que devem mudar e clique em **Aplicar o novo preço às marcadas**, ou em **Manter os preços atuais**.
+- **Consultas com algum pagamento registrado**, total ou parcial: mantêm o preço cobrado. A lista mostra essas consultas para você saber; se houver diferença a acertar, registre-a à parte.
+
+Por exemplo: o preço era R$ 200 e, em 20 de novembro, você cadastra R$ 300 com vigência a partir de 1º de outubro. Uma consulta de 1º de novembro ainda não paga aparece na lista e passa a R$ 300 se você a marcar. Se ela já tiver um pagamento, continua com R$ 200.
+
+### Consultas canceladas depois de um pagamento
+
+Se uma consulta cobrada passa para um status sem cobrança (por exemplo, Cancelado) e já tem pagamento registrado, ela continua no Financeiro como **Sem cobrança (com pagamento)**, para o pagamento não se perder. Sem pagamento, ela sai do Financeiro.
 
 ## Editar o cadastro
 

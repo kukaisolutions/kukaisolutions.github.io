@@ -32,9 +32,13 @@ Algunas pantallas de Beiwe todavía están solo en portugués. Cuando un texto d
 
 Los servicios van antes que los pacientes porque el precio de cada paciente se define por servicio.
 
-## Complete su propio registro
+Después, el equipo ya puede escribir los informes en los expedientes, e incluso dictarlos: vea [Cómo hacer informes con transcripción de voz por IA](/products/beiwe/es/informe-con-transcripcion-por-ia/).
 
-Cuando se crea la cuenta de la clínica, el administrador aparece como colaborador con un nombre provisional. La página **Inicio** muestra un aviso con el enlace para completar su nombre y cargo en **Registro → Colaboradores**.
+## Empiece por su propio registro
+
+Cuando se crea la cuenta de la clínica, el administrador aparece como colaborador con el nombre provisional "ADMIN". En el primer acceso, la página **Inicio** muestra un aviso con el enlace para completar su nombre, cargo y demás datos en **Registro → Colaboradores**.
+
+🎬 Video: [Primer acceso y registro de administradores](https://www.youtube.com/watch?v=dHRN0TTfIHQ) (en portugués)
 
 ## La página Inicio avisa lo que falta
 

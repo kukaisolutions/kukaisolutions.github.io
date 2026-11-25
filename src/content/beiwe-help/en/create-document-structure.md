@@ -39,7 +39,7 @@ The document appears in **Registered Document Types and Sections**, and the team
 
 ## And to write the report?
 
-Watch the video [How to finish an appointment and write a report](https://www.youtube.com/watch?v=Vo3AN5XL-dg) (in Portuguese).
+Watch the video [How to finish an appointment and write a report](https://www.youtube.com/watch?v=Vo3AN5XL-dg) (in Portuguese). To dictate the report instead of typing it, see [How to write reports with AI voice transcription](/products/beiwe/en/report-with-ai-transcription/).
 
 Next step: [How to add a service and its statuses](/products/beiwe/en/add-service-and-statuses/) · Back to [Getting started](/products/beiwe/en/getting-started/)
 

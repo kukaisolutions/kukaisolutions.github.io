@@ -39,7 +39,7 @@ El documento aparece en **Tipos de Documento y Secciones Registrados**, y el equ
 
 ## ¿Y para escribir el informe?
 
-Vea el video [Cómo finalizar una cita y escribir un informe](https://www.youtube.com/watch?v=Vo3AN5XL-dg) (en portugués).
+Vea el video [Cómo finalizar una cita y escribir un informe](https://www.youtube.com/watch?v=Vo3AN5XL-dg) (en portugués). Para dictar el informe en lugar de escribirlo, vea [Cómo hacer informes con transcripción de voz por IA](/products/beiwe/es/informe-con-transcripcion-por-ia/).
 
 Siguiente paso: [Cómo registrar un servicio y sus estados](/products/beiwe/es/registrar-servicio-y-estados/) · Volver a [Primeros pasos](/products/beiwe/es/primeros-pasos/)
 

@@ -41,6 +41,7 @@ Para marcar uma série de consultas de uma vez, abra **🔁 Agendar consultas pe
 Quando o atendimento acontecer, abra a consulta na Agenda, em **Editar evento**, e mude o status para **Realizado** (ou outro status cobrado). A partir daí ela conta como valor a receber no **Financeiro**, e o relatório da consulta pode ser escrito nos Prontuários.
 
 - 🎬 [Como finalizar uma consulta e escrever um relatório](https://www.youtube.com/watch?v=Vo3AN5XL-dg)
+- 🎬 [Como fazer relatórios usando transcrição de voz por IA](https://www.youtube.com/watch?v=fFzwQqI4u0U) (guia: [Como fazer relatórios usando transcrição de voz por IA](/products/beiwe/pt/relatorio-com-transcricao-por-ia/))
 - 🎬 [Fluxo de caixa visto a partir da plataforma](https://www.youtube.com/watch?v=R_wjvddsbJM)
 
 Voltar para [Primeiros passos](/products/beiwe/pt/primeiros-passos/)

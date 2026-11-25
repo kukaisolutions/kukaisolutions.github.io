@@ -32,9 +32,13 @@ Some Beiwe screens are still only in Portuguese. When a label on screen is in Po
 
 Services come before patients because each patient's price is set per service.
 
-## Complete your own profile
+After that, the team can write reports in the patient records, and can even dictate them: see [How to write reports with AI voice transcription](/products/beiwe/en/report-with-ai-transcription/).
 
-When the clinic's account is created, the administrator appears as a collaborator with a temporary name. The **Home** page shows a notice with a link to complete your name and role in **Registration → Collaborators**.
+## Start with your own profile
+
+When the clinic's account is created, the administrator appears as a collaborator with the temporary name "ADMIN". On the first sign-in, the **Home** page shows a notice with a link to complete your name, role and other details in **Registration → Collaborators**.
+
+🎬 Video: [First sign-in and registering administrators](https://www.youtube.com/watch?v=dHRN0TTfIHQ) (in Portuguese)
 
 ## The Home page tells you what is missing
 
